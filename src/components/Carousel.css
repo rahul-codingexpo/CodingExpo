@@ -1,0 +1,146 @@
+
+
+.hero-carousel {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     overflow: hidden;
+ }
+
+ .hero-carousel .slide {
+     position: relative;
+     height: 100vh;
+     width: 100%;
+ }
+
+ .hero-carousel .slide img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     display: block;
+ }
+
+ .hero-carousel .overlay {
+     position: absolute;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.4);
+     z-index: 1;
+ }
+
+ .hero-carousel .content {
+     position: absolute;
+     top: 55%;
+     left: 10%;
+     transform: translateY(-50%);
+     color: #fff;
+     z-index: 2;
+     padding: 1rem;
+     max-width: 50%;
+     border-radius: 8px;
+ }
+
+ .hero-carousel .content h1 {
+     font-size: 4.5rem;
+     margin: 0 0 1rem;
+ }
+
+ .hero-carousel .content p {
+     font-size: 1.2rem;
+     margin-bottom: 1.5rem;
+ }
+
+ .hero-carousel .btn {
+    padding: 14px 36px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(135deg, #1863b8, #075887);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        z-index: 1;
+        animation: calypsoFadeIn 1.4s ease forwards;
+        opacity: 0;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+ }
+ .hero-carousel .btn ::before{
+    content: "";
+        position: absolute;
+        top: 0;
+        left: -75%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(120deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0));
+        transform: skewX(-30deg);
+        transition: 0.75s;
+        z-index: 0;
+ }
+ .hero-carousel .btn:hover::before{
+    left: 100%;
+ }
+
+ @keyframes calypsoFadeIn {
+     0% {
+         opacity: 0;
+         transform: translateY(20px) scale(0.95);
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateY(0) scale(1);
+     } }
+
+ .hero-carousel .btn:hover {
+    transform: scale(2.05);
+    box-shadow: 0 8px 25px rgba(102, 180, 226, 0.902);
+ }
+
+ .animated-img {
+     position: absolute;
+     bottom: 50%;
+     right: 30%;
+    transform: translateY(-50%);
+    max-width: 30vh;
+    max-height: 30vh;
+     animation: rotate 5s ease-in-out infinite;
+     z-index: 2;
+ }
+
+ @keyframes rotate {
+
+     0%,
+     100% {
+         transform: translateY(0);
+     }
+
+     50% {
+         transform: translateY(-20px);
+     }
+ }
+
+ @media (max-width: 768px) {
+     .hero-carousel .content {
+         left: 5%;
+         max-width: 90%;
+     }
+
+     .hero-carousel .content h1 {
+         font-size: 2.5rem;
+     }
+
+     .hero-carousel .content p {
+         font-size: 1rem;
+     }
+
+     .hero-carousel .animated-img {
+         max-width: 10vh;
+         max-height: 10vh;
+         bottom: 70%;
+     }
+ }

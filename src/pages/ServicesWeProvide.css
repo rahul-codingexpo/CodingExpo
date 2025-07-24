@@ -1,0 +1,78 @@
+.servicesWe-container {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+.servicesWe-subtitle {
+    color: #2b6cb0;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.serviceWe-icon{
+    color: #2b6cb0 !important;
+    margin-top: 50px;
+
+}
+.servicesWe-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1a202c;
+}
+
+.servicesWe-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.serviceWe-card {
+    background-color: white;
+    border-radius: 400px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+    padding: 30px 20px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed #ddd;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.serviceWe-title{
+    font-size: 1.6rem;
+    font-weight: 630;
+}
+
+.serviceWe-card:hover {
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+}
+
+.serviceWe-card:hover .serviceWe-icon svg
+{ 
+    color: white;
+}
+.serviceWe-card:hover .checkWe{
+    color: rgb(255, 218, 174);
+}
+
+.checkWe-icon{
+    margin-top: 40px;
+    
+}
+.checkWe-icon svg{
+    width:40px !important;
+    height: 40px !important;
+}
+
+.checkWe {
+    color: #2b6cb0;
+    transition: color 0.3s ease;
+}

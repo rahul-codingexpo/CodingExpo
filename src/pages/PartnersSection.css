@@ -1,0 +1,155 @@
+/* Section background and padding */
+.section-partner {
+    background-color: #070d2d;
+    padding: 60px 0;
+    overflow: hidden;
+    
+}
+
+/* Container width fix */
+.tf-container {
+    max-width: 1521px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Row and column overflow fix */
+.section-partner .row {
+    display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    /* overflow: hidden; */
+}
+.section-partner .col-md-4 {
+    display: flex;
+}
+
+.section-partner .col-lg-12 {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Info box styling */
+.icon-box {
+    background: #ffffff url("../assets/wave-bg.svg") no-repeat center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    text-align: left;
+    position: relative;
+    height: 100%;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    cursor: default;
+    width: 300px;
+}
+
+.icon-box:hover {
+    background-color: #156bf5 !important;
+    background-blend-mode: overlay;
+    transform: translateY(-5px);
+    color: #fff;
+}
+.icon-box:hover svg{
+    color: #fff;
+}
+
+.icon-box:hover .icon,
+.icon-box:hover .title,
+.icon-box:hover .des {
+    color: #fff;
+}
+
+.icon-box .icon {
+    font-size: 36px;
+    color: #2f6cd1;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.icon-box .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.icon-box .des {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.icon-box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #2f6cd1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.icon-box:hover::after {
+    transform: scaleX(1);
+}
+
+/* Swiper slider container */
+.brand-logo {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+/* Swiper core and wrapper */
+.swiper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: 100% !important;
+}
+
+/* Swiper slide */
+.brand-logo .swiper-slide {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Logo images inside Swiper */
+.brand-logo img {
+    max-height: 50px;
+    object-fit: contain;
+}
+
+/* Rating stars */
+.rating {
+    font-size: 14px;
+    color: #ffd700;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .icon-box {
+        margin-bottom: 30px;
+    }
+}
