@@ -1,7 +1,7 @@
 .consulting-hero {
     padding: 40px 80px;
     background-color: #fff;
-    
+
 }
 
 .hero-top {
@@ -75,11 +75,12 @@
     margin-top: 30px;
 }
 
-.service-highlights p{
+.service-highlights p {
     color: #054fa9;
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 .grid-item {
     padding: 30px;
     border: 1px solid #e1dada;
@@ -87,6 +88,7 @@
     background: #fff;
     transition: all 0.3s ease;
 }
+
 .grid-item:hover {
     border-radius: 0px;
     background: #499df8;
@@ -95,19 +97,23 @@
     opacity: 1;
 
 }
+
 .grid-item h4 {
     color: #054fa9;
     text-align: left;
     margin-left: 20px;
 }
-.grid-item:hover h4{
+
+.grid-item:hover h4 {
     color: #fff;
     font-size: 2rem;
     transition: font-size 0.3s ease, color 0.3s ease;
 }
-.grid-item:hover h3{
+
+.grid-item:hover h3 {
     color: #fff;
 }
+
 .grid-item p {
     font-size: 2rem;
     font-weight: 600;
@@ -121,10 +127,12 @@
 .detailed-services {
     padding: 5px 80px;
 }
-.detailed-services h2{
+
+.detailed-services h2 {
     font-weight: 650;
     font-size: 1.5rem;
 }
+
 .detailed-services ul {
     list-style: none;
     padding-left: 5;
@@ -136,4 +144,69 @@
 
 .detailed-services h4 {
     font-size: 1.3rem;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+}
+
+.uiux-tools-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tools-heading h2 {
+    font-size: 2rem;
+    color: #0073ff;
+    margin-bottom: 20px;
+}
+
+.tools-heading p {
+    
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.tools-grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.tools-image img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 75px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.tool {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap:20px;
+}
+
+.tool img {
+    width: 50px;
+    height: 50px;
+}
+
+.tool p {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+}

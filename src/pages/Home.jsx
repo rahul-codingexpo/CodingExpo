@@ -8,6 +8,7 @@ import Service from "./ServicesSection";
 import ServiceWeProvide from "./ServicesWeProvide";
 import CTASection from "./CTASection";
 import Testimonials from "./TestimonialSection";
+import Enquiry from "./EnquiryPage";
 function Home() {
   return (
     <div className="home-container">
@@ -20,7 +21,7 @@ function Home() {
       <ServiceWeProvide />
       <CTASection />
       <Testimonials />
-      <h1 className="home-title">CodingExpo Home Page</h1>
+      <Enquiry />
     </div>
   );
 }

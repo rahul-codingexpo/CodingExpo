@@ -4,11 +4,11 @@ import { FaComments, FaChevronRight } from "react-icons/fa";
 
 const CTASection = () => {
   return (
-    <div className="cta-wrapper">
+    <div className="ctaB-wrapper">
       {/* Left Section */}
-      <div className="cta-left">
-        <div className="cta-left-content">
-          <FaComments size={28} className="cta-icon" />
+      <div className="ctaB-left">
+        <div className="ctaB-left-content">
+          <FaComments size={28} className="ctaB-icon" />
           <p>
             Let’s{" "}
             <strong>
@@ -17,14 +17,16 @@ const CTASection = () => {
             IT Consultations
           </p>
         </div>
-        <a href="#contact" className="cta-link">
-          Let’s Talk <FaChevronRight size={12} />
-        </a>
+        <div className="ctaB-link">
+          <a href="#contact">
+            Let’s Talk <FaChevronRight size={12} />
+          </a>
+        </div>
       </div>
 
       {/* Right Section */}
-      <div className="cta-right">
-        <div className="cta-avatars">
+      <div className="ctaB-right">
+        <div className="ctaB-avatars">
           <img
             src="https://randomuser.me/api/portraits/women/1.jpg"
             alt="user1"
@@ -37,14 +39,16 @@ const CTASection = () => {
             src="https://randomuser.me/api/portraits/men/3.jpg"
             alt="user3"
           />
-          <div className="cta-plus">+</div>
+          <div className="ctaB-plus">+</div>
         </div>
-        <p className="cta-clients">
-          <strong>
-            <u>700+</u>
-          </strong>{" "}
-          Trusted Clients
-        </p>
+        <div className="ctaB-clients">
+          <p>
+            <strong>
+              <u>700+</u>
+            </strong>{" "}
+            Trusted Clients
+          </p>
+        </div>
       </div>
     </div>
   );

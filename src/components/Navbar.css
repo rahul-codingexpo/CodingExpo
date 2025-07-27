@@ -25,6 +25,9 @@
     align-items: center;
     gap: 30px;
 }
+.navbar-right li{
+    list-style: none;
+}
 
 .navbar-right a,
 .dropdown-link {
@@ -33,6 +36,7 @@
     font-weight: 600;
     font-size: 19px;
     cursor: pointer;
+    margin-bottom: 5px;
     position: relative;
 }
 
@@ -57,7 +61,10 @@ visibility: visible;
     display: none;
     position: absolute;
     top: 100%;
-    transform: translateX(-70%);
+    left: -600px;
+    right: 0;
+    margin: auto;
+    transform: translateX(0);
     background-color: #1c1c1cec;
     color: white;
     padding: 20px 40px;
@@ -65,10 +72,10 @@ visibility: visible;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
     z-index: 999;
     width: 1000px;
-    max-width: 50vw;
+    max-width: 53vw;
     justify-content: space-between;
-    gap: 50px;
-    /* animation: fadeIn 0.5s ease-in-out; */
+    gap: 80px;
+    animation: fadeIn 0.4s ease-in-out;
 }
 
 .dropdown-container:hover .dropdown-menu {
@@ -78,12 +85,12 @@ visibility: visible;
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(0);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0px);
     }
 }
 
@@ -96,7 +103,9 @@ visibility: visible;
 }
 
 .dropdown-column h4 {
+    margin-top: 0;
     margin-bottom: 5px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: white;
 }
@@ -108,7 +117,7 @@ visibility: visible;
 
 /* Style for Links inside Dropdown */
 .dropdown-column a {
-    margin: 6px 0;
+    margin: 12px 0;
     font-size: 14px;
     color: white;
     text-decoration: none;
@@ -141,13 +150,13 @@ visibility: visible;
                     .navbar-left {
                         margin-left: 0;
                     }
-                    
                     .navbar-right {
                         flex-direction: column;
                         align-items: flex-start;
                         gap: 20px;
                         position: fixed;
                         top: 0;
+                        margin: 0;
                         left: 0;
                         height: 100vh;
                         width: 250px;
@@ -161,11 +170,36 @@ visibility: visible;
         
                     .navbar-right.open {
                         transform: translateX(0);
+                        
                         /* slide in */
                     }
-        
-                    .dropdown-menu {
-                        position: static;
+                                        .dropdown-container {
+                                            width: 100%;
+                                            position: relative;
+                                        }
+                    
+                                        .dropdown-menu {
+                                            position: absolute;
+                                            /* <- BETTER than fixed for inside mobile menu */
+                                            top: 15px;
+                                            left: 0;
+                                            width: 90%;
+                                            max-width: 100%;
+                                            margin-top: 10px;
+                                            background-color: #186da0;
+                                            flex-direction: column;
+                                            gap: 0;
+                                            padding: 20px;
+                                            box-shadow: none;
+                                            z-index: 1000;
+                                            display: flex;
+                                            max-height: 50vh;
+                                                overflow-y: auto;
+                                                padding-right: 7px;
+                                                scrollbar-width: none;
+                                        }
+                    /* .dropdown-menu {
+                        position: fixed;
                         transform: none;
                         width: 90%;
                         max-width: 100%;
@@ -175,10 +209,14 @@ visibility: visible;
                         background-color: #186da0;
                         margin-top: 0px;
                         max-height: 50vh;
+                        
                             overflow-y: auto;
                             padding-right: 7px;
                             scrollbar-width: thin
-                    }
+                    } */
+                                        /* .dropdown-container {
+                                            position: relative;
+                                        } */
                     .dropdown-column h4 {
                         font-size: 16px;
                         font-weight: 1000;
@@ -204,6 +242,7 @@ visibility: visible;
                     }
                     .mobile-menu-logo {
                         width: 100%;
+                        margin-top: 20px;
                         display: block;
                         
                         

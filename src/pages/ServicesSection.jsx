@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./ServicesSection.css";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import ChatLogo from "../assets/chat1.png";
@@ -15,36 +16,42 @@ import {
 const services = [
   {
     id: 1,
+    slug: "web-development",
     title: "Website Design & Development",
     icon: <FaPaintBrush />,
     desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
   },
   {
     id: 2,
+    slug: "web-app-development",
     title: "Mobile App Development",
     icon: <FaMobileAlt />,
     desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
   },
   {
     id: 3,
+    slug: "ui-ux",
     title: "UI/UX Design",
     icon: <FaCogs />,
     desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
   },
   {
     id: 4,
+    slug: "seo",
     title: "SEO Services",
     icon: <FaChartLine />,
     desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
   },
   {
     id: 5,
+    slug: "social-media-management",
     title: "SMM Services",
     icon: <FaBullhorn />,
     desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
   },
   {
     id: 6,
+    slug: "pay-per-click-services",
     title: "PPC Services",
     icon: <FaCloud />,
     desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
@@ -108,11 +115,8 @@ const ServicesSection = () => {
             <span className="service-arrow">
               <FaArrowUpRightFromSquare />
             </span>
-            {service && (
-              <a href="#" className="read-more">
-                Read More
-              </a>
-            )}
+
+            <Link to={`/services/${service.slug}`}>Read More</Link>
           </div>
         ))}
       </div>
@@ -189,7 +193,9 @@ const ServicesSection = () => {
           />
           <div className="experience-card">
             <h2>8+</h2>
-            <p>Years Of Experience</p>
+            <p>
+              <u>Years Of Experience</u>
+            </p>
             <div className="rating">
               <span>★★★★★</span>
               <p>Trustpoint</p>

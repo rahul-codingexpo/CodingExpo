@@ -9,6 +9,11 @@ const Navbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const navRef = useRef();
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+    setShowDropdown(false);
+  };
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -35,72 +40,46 @@ const Navbar = () => {
           <img src={logo} alt="CodingExpo" className="logo" />
         </Link>
       </div>
-
-      {/* Right: Nav Links */}
-      <div className={`navbar-right ${menuOpen ? "open" : ""}`}>
-        <div className="mobile-menu-logo">
+      <ul className={`navbar-right ${menuOpen ? "open" : ""}`}>
+        <li className="mobile-menu-logo">
           <Link to="/" onClick={() => setMenuOpen(false)}>
             <img src={logo} alt="CodingExpo" />
           </Link>
-        </div>
-        <Link to="/" onClick={() => setMenuOpen(false)}>
-          Home
-        </Link>
-        <Link to="/about" onClick={() => setMenuOpen(false)}>
-          About Us
-        </Link>
+        </li>
 
-        <Link to="/contact" onClick={() => setMenuOpen(false)}>
-          Contact Us
-        </Link>
+        <li>
+          <Link to="/" onClick={() => setMenuOpen(false)}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="/about-company" onClick={() => setMenuOpen(false)}>
+            About Us
+          </Link>
+        </li>
 
-        <div
+        <li
           className="dropdown-container"
           onMouseEnter={() => setShowDropdown(true)}
           onMouseLeave={() => setShowDropdown(false)}
         >
           <span className="dropdown-link">Services</span>
-
           {showDropdown && (
             <div className="dropdown-menu">
+              {/* --- Dropdown Columns --- */}
               <div className="dropdown-column">
                 <h4>Software Development</h4>
                 <hr />
-
-                <Link
-                  to="/consulting"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
-                >
+                <Link to="/services/consulting" onClick={closeMenu}>
                   Consulting
                 </Link>
-                <Link
-                  to="/WebDevelopment"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
-                >
+                <Link to="/services/web-development" onClick={closeMenu}>
                   Web Development
                 </Link>
-                <Link
-                  to="/webAppDev"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
-                >
+                <Link to="/services/web-app-development" onClick={closeMenu}>
                   Web App Development
                 </Link>
-                <Link
-                  to="/uiUx"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
-                >
+                <Link to="/services/ui-ux" onClick={closeMenu}>
                   UI/UX
                 </Link>
               </div>
@@ -108,86 +87,56 @@ const Navbar = () => {
                 <h4>Mobile App Development</h4>
                 <hr />
                 <Link
-                  to="/eCommerce"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
+                  to="/services/eCommerce-app-development"
+                  onClick={closeMenu}
                 >
-                  E-Commerce App
+                  E-Commerce App Development
                 </Link>
                 <Link
-                  to="/hybridApp"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
+                  to="/services/hybrid-mobile-app-development"
+                  onClick={closeMenu}
                 >
-                  Hybrid App
+                  Hybrid App Development
                 </Link>
                 <Link
-                  to="androidApp"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
+                  to="/services/android-app-development"
+                  onClick={closeMenu}
                 >
-                  Android App
+                  Android App Development
                 </Link>
-                <Link
-                  to="ios"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
-                >
-                  IOS
+                <Link to="/services/ios-development" onClick={closeMenu}>
+                  iOS
                 </Link>
               </div>
               <div className="dropdown-column">
                 <h4>Digital Marketing</h4>
                 <hr />
-                <Link
-                  to="/seo"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
-                >
-                  SEO
+                <Link to="/services/seo" onClick={closeMenu}>
+                  Search Engine Optimization
+                </Link>
+                <Link to="/services/pay-per-click-services" onClick={closeMenu}>
+                  Pay Per Click
                 </Link>
                 <Link
-                  to="/ppc"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
+                  to="/services/social-media-management"
+                  onClick={closeMenu}
                 >
-                  PPC
+                  Social Media Marketing
                 </Link>
-                <Link
-                  to="smm"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
-                >
-                  SMM
-                </Link>
-                <Link
-                  to="mailMarketing"
-                  onClick={() => {
-                    setMenuOpen(false);
-                    setShowDropdown(false);
-                  }}
-                >
-                  Mail Marketing
+                <Link to="/services/email-Marketing" onClick={closeMenu}>
+                  Email Marketing
                 </Link>
               </div>
             </div>
           )}
-        </div>
-      </div>
+        </li>
+
+        <li>
+          <Link to="/contact-us" onClick={() => setMenuOpen(false)}>
+            Contact Us
+          </Link>
+        </li>
+      </ul>
 
       {/* Hamburger Icon */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>

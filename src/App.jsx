@@ -3,10 +3,12 @@ import AllRoutes from "./routes";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-
+import ScrollToTop from "./components/ScrollToTop";
+import "./App.css";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
       <Navbar />
       <AllRoutes />

@@ -34,24 +34,26 @@ const services = [
 
 const ServicesWeProvide = () => {
   return (
-    <div className="servicesWe-container">
-      <p className="servicesWe-subtitle">What We Provide</p>
-      <h2 className="servicesWe-title">
-        Our Web Development and Digital <br /> Services Create Winning Tales
-      </h2>
+    <section className="serviceWe-section">
+      <div className="servicesWe-container">
+        <p className="servicesWe-subtitle">What We Provide</p>
+        <h2 className="servicesWe-title">
+          Our Web Development and Digital <br /> Services Create Winning Tales
+        </h2>
 
-      <div className="servicesWe-grid">
-        {services.map((service, index) => (
-          <div key={index} className="serviceWe-card">
-            <div className="serviceWe-icon">{service.icon}</div>
-            <h3 className="serviceWe-title">{service.title}</h3>
-            <div className="checkWe-icon">
-              <FaCheckCircle className="checkWe" />
+        <div className="servicesWe-grid">
+          {services.map((service, index) => (
+            <div key={index} className="serviceWe-card">
+              <div className="serviceWe-icon">{service.icon}</div>
+              <h3 className="serviceWe-title">{service.title}</h3>
+              <div className="checkWe-icon">
+                <FaCheckCircle className="checkWe" />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

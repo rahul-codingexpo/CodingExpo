@@ -18,20 +18,22 @@ export default function AllRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/consulting" element={<Consulting />} />
-      <Route path="/WebDevelopment" element={<WebDev />} />
-      <Route path="/webAppDev" element={<WebDevApp />} />
-      <Route path="/uiUx" element={<UIUX />} />
-      <Route path="/eCommerce" element={<ECommerce />} />
-      <Route path="/hybridApp" element={<HybridApp />} />
-      <Route path="/androidApp" element={<AndroidApp />} />
-      <Route path="/ios" element={<IOS />} />
-      <Route path="/seo" element={<SEO />} />
-      <Route path="/ppc" element={<PPC />} />
-      <Route path="/smm" element={<SMM />} />
-      <Route path="/mailMarketing" element={<MailMarketing />} />
+      <Route path="/about-company" element={<About />} />
+      <Route path="/contact-us" element={<Contact />} />
+      <Route path="/services">
+        <Route path="consulting" element={<Consulting />} />
+        <Route path="web-development" element={<WebDev />} />
+        <Route path="web-app-development" element={<WebDevApp />} />
+        <Route path="ui-ux" element={<UIUX />} />
+        <Route path="eCommerce-app-development" element={<ECommerce />} />
+        <Route path="hybrid-mobile-app-development" element={<HybridApp />} />
+        <Route path="android-app-development" element={<AndroidApp />} />
+        <Route path="ios-development" element={<IOS />} />
+        <Route path="seo" element={<SEO />} />
+        <Route path="pay-per-click-services" element={<PPC />} />
+        <Route path="social-media-management" element={<SMM />} />
+        <Route path="email-Marketing" element={<MailMarketing />} />
+      </Route>
     </Routes>
   );
 }

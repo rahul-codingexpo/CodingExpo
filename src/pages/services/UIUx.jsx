@@ -1,5 +1,5 @@
 import React from "react";
-import "./Consulting.css";
+import "./UIUX.css";
 import image from "../../assets/bg-1.jpg";
 
 const UIUX = () => {
@@ -128,6 +128,79 @@ const UIUX = () => {
               <p>↗</p>
             </div>
           ))}
+        </div>
+      </section>
+      {/* UI/UX Tools Section */}
+      <section className="uiux-tools-section">
+        <div className="tools-heading">
+          <h2>Tools We Use in UI/UX design</h2>
+          <p>
+            UX design applies to both physical and digital services/products. It
+            helps in creating framework design solutions for obstacles that
+            users meet while using the product or website. It focuses on
+            improving the complete user experience from the beginning to the
+            final phase. The objective of UX design is to deliver a product that
+            makes users contented because of their efficiency. While UI design
+            applies only to digital services and products. User interface design
+            distillates visual aspects that enable users to align with the
+            product. UI involves in making a blend of images, animation, colors,
+            typography etc. User Interface design (UI) aims to customize a
+            product that provides creative and visual satisfaction to users. We
+            use software for UI/UX designs:
+          </p>
+        </div>
+
+        <div className="tools-grid-wrapper">
+          <div className="tools-image">
+            <img
+              src="https://img.freepik.com/free-photo/businessman-holding-tablet_23-2147770535.jpg"
+              alt="UI/UX Tools"
+            />
+          </div>
+          <div className="tools-grid">
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                alt="Figma"
+              />
+              <p>Figma</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop"
+              />
+              <p>PhotoShop</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+                alt="Illustrator"
+              />
+              <p>Illustrator</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Corel Draw"
+              />
+              <p>Corel Draw</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                alt="Canva"
+              />
+              <p>Canva</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+                alt="InDesign"
+              />
+              <p>InDesign</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>

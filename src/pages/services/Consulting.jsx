@@ -1,6 +1,60 @@
 import React from "react";
 import "./Consulting.css";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
+import {
+  FaMobileAlt,
+  FaPaintBrush,
+  FaChartLine,
+  FaBullhorn,
+  FaCogs,
+  FaCloud,
+} from "react-icons/fa";
+
+const services = [
+  {
+    id: 1,
+    slug: "web-development",
+    title: "Website Design & Development",
+    icon: <FaPaintBrush />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 2,
+    slug: "web-app-development",
+    title: "Mobile App Development",
+    icon: <FaMobileAlt />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 3,
+    slug: "ui-ux",
+    title: "UI/UX Design",
+    icon: <FaCogs />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 4,
+    slug: "seo",
+    title: "SEO Services",
+    icon: <FaChartLine />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 5,
+    slug: "social-media-management",
+    title: "SMM Services",
+    icon: <FaBullhorn />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 6,
+    slug: "pay-per-click-services",
+    title: "PPC Services",
+    icon: <FaCloud />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+];
 
 const Consulting = () => {
   return (
@@ -46,10 +100,6 @@ const Consulting = () => {
         <ul>
           <li>
             <h4>Digital Strategy Consulting</h4>
-            {/* <img
-              src="https://navikadigital.com/services/..\assets\images\image-box\new-img1"
-              alt=""
-            /> */}
             <p>
               Our digital marketing consulting company easily comprehends your
               aspirations. We line up existing and anticipated business
@@ -113,7 +163,7 @@ const Consulting = () => {
           What Establishes <span className="blue">YourCompany</span> as a
           Prominent Web & Digital Consulting Company
         </p>
-        <div className="grid">
+        {/* <div className="grid">
           {[
             "Relentless Devotion to Work and Project",
             "Apply Only Validated Strategies",
@@ -126,6 +176,23 @@ const Consulting = () => {
               <h4>0{i + 1}</h4>
               <h3>{title}</h3>
               <p>↗</p>
+            </div>
+          ))}
+        </div> */}
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <div className="service-id">{`0${service.id}`}</div>
+              <h3>{service.title}</h3>
+              {service.desc && (
+                <>
+                  <p className="description">{service.desc}</p>
+                  <div className="service-icon">{service.icon}</div>
+                </>
+              )}
+              <span className="service-arrow">
+                <FaArrowUpRightFromSquare />
+              </span>
             </div>
           ))}
         </div>
