@@ -161,6 +161,10 @@
     max-width: 100%;
 }
 
+/* .swiper-pagination span{
+    text-align: left;
+} */
+
 @media screen and (max-width: 768px) {
     .testimonial-wrapper {
         background: #ffffff;

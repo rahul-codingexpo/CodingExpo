@@ -116,7 +116,9 @@ const ServicesSection = () => {
               <FaArrowUpRightFromSquare />
             </span>
 
-            <Link to={`/services/${service.slug}`}>Read More</Link>
+            <Link to={`/services/${service.slug}`} className="read-more">
+              Read More {">"}
+            </Link>
           </div>
         ))}
       </div>

@@ -1,7 +1,9 @@
-.serviceWe-section{
+
+.serviceWe-section {
     width: 100%;
-    
+
 }
+
 .servicesWe-container {
     text-align: center;
     padding: 30px 0px;
@@ -15,18 +17,6 @@
     margin-bottom: 10px;
     font-size: 18px;
 }
-.serviceWe-icon{
-    color: #2b6cb0 !important;
-    margin-top: 50px;
-
-}
-.servicesWe-title {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #1a202c;
-}
-
 .servicesWe-grid {
     display: flex;
     flex-wrap: wrap;
@@ -37,48 +27,102 @@
 }
 
 .serviceWe-card {
-    background-color: white;
-    border-radius: 400px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
-    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 150px;
+    padding: 40px 20px;
     width: 200px;
-    height: 300px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px dashed #ddd;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.serviceWe-title{
-    font-size: 1.6rem;
-    font-weight: 630;
-}
-
-.serviceWe-card:hover {
-    background-color: #2b6cb0;
-    color: white;
+    justify-content: space-between;
+    position: relative;
+    color: #2b6cb0;
     border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.serviceWe-card:hover .serviceWe-icon svg
-{ 
-    color: white;
-}
-.serviceWe-card:hover .checkWe{
-    color: rgb(255, 218, 174);
+/* Dashed inner border always visible */
+.serviceWe-card::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    border: 1px dashed #ddd;
+    border-radius: 120px;
+    z-index: 1;
 }
 
-.checkWe-icon{
-    margin-top: 40px;
+
+.serviceWe-card::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100%);
+    height: 0%;
+    background-color: #2b6cb0;
+    z-index: 0;
+    transition: height 0.5s ease;
+    border-radius: 120px;
+    pointer-events: none;
+}
+
+.serviceWe-card:hover::after {
+    height: calc(100%);
     
 }
-.checkWe-icon svg{
-    width:40px !important;
-    height: 40px !important;
+/* Bring content above ::before */
+.serviceWe-icon,
+.serviceWe-title,
+.checkWe-icon {
+    z-index: 1;
+    position: relative;
 }
 
-.checkWe {
+/* Icon at the top */
+.serviceWe-icon {
+    color: #2b6cb0;
+    font-size: 40px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+.serviceWe-card:hover .serviceWe-icon{
+    transform: scaleX(-1);
+    
+}
+/* Title in center */
+.serviceWe-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+/* Check icon at bottom */
+.checkWe-icon {
+    margin-bottom: 10px;
+}
+
+.checkWe-icon svg {
+    width: 40px;
+    height: 40px;
     color: #2b6cb0;
     transition: color 0.3s ease;
+}
+
+/* Hover styles */
+.serviceWe-card:hover .serviceWe-title,
+.serviceWe-card:hover .serviceWe-icon{
+    color: white;
+}
+
+.serviceWe-card:hover .checkWe-icon svg {
+    color: #ffdaae;
 }
