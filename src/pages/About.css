@@ -1,39 +1,37 @@
-
-
 .about-section {
     padding-top: 150px;
+    padding-bottom: 50px;
     background-color: #fff;
     font-family: "Segoe UI", sans-serif;
+    overflow-x: hidden;
 }
 
 .about-container {
     display: flex;
     flex-direction: row;
-    /* Left to Right */
     align-items: center;
     justify-content: space-between;
     max-width: 1300px;
     margin: 0 auto;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
+    padding: 0 20px;
 }
 
 .about-image {
     flex: 1 1 45%;
-    
 }
 
 .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 100px;
+    border-radius: 80px;
     object-fit: cover;
 }
 
 .about-content {
     flex: 1 1 50%;
     padding: 20px 30px;
-    padding-top: 0px;
     margin-top: -50px;
 }
 
@@ -46,12 +44,12 @@
 .about-title {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #111;
 }
 
 .about-highlight {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 700;
     color: #111;
     margin-bottom: 15px;
@@ -60,22 +58,66 @@
 .about-description {
     font-size: 17px;
     color: #555;
-    line-height: 2;
+    line-height: 1.8;
 }
 
-/* Optional: Responsive tweaks */
-@media (max-width: 768px) {
+/* Responsive for tablets and below */
+@media (max-width: 992px) {
     .about-container {
         flex-direction: column;
+        padding: 0 15px;
     }
 
     .about-image,
     .about-content {
         flex: 1 1 100%;
         text-align: center;
+        margin-top: 0;
+    }
+
+    .about-content {
+        padding: 20px;
     }
 
     .about-title {
         font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .about-highlight {
+        font-size: 20px;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+
+    .about-image img {
+        border-radius: 40px;
+        max-width: 100%;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .about-title {
+        font-size: 24px;
+    }
+
+    .about-highlight {
+        font-size: 18px;
+        text-align: left
+    }
+
+    .about-description {
+        font-size: 15px;
+        text-align: justify;
+        letter-spacing: -0.5px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid gray;
+    }
+
+    .about-image img {
+        border-radius: 140px;
     }
 }

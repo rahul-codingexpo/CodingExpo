@@ -3,65 +3,35 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./PartnersSection.css";
+
 import clutch from "../assets/brand_logo/clutch.png";
 import Codeable from "../assets/brand_logo/codeable.png";
 import GoodFirms from "../assets/brand_logo/goodfirms.png";
 import Facebook from "../assets/brand_logo/facebook.png";
 import Google from "../assets/brand_logo/google.png";
+
 import { GiBullseye } from "react-icons/gi";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { PiHandCoinsDuotone } from "react-icons/pi";
 
 const logos = [
-  {
-    name: "Codeable",
-    img: Codeable,
-  },
-  {
-    name: "GoodFirms",
-    img: GoodFirms,
-  },
-  {
-    name: "Clutch",
-    img: clutch,
-  },
-  {
-    name: "Facebook",
-    img: Facebook,
-  },
-  {
-    name: "Google",
-    img: Google,
-  },
-  {
-    name: "Codeable",
-    img: Codeable,
-  },
-  {
-    name: "GoodFirms",
-    img: GoodFirms,
-  },
-  {
-    name: "Clutch",
-    img: clutch,
-  },
-  {
-    name: "Facebook",
-    img: Facebook,
-  },
-  {
-    name: "Google",
-    img: Google,
-  },
+  { name: "Codeable", img: Codeable },
+  { name: "GoodFirms", img: GoodFirms },
+  { name: "Clutch", img: clutch },
+  { name: "Facebook", img: Facebook },
+  { name: "Google", img: Google },
+  { name: "Codeable", img: Codeable },
+  { name: "GoodFirms", img: GoodFirms },
+  { name: "Clutch", img: clutch },
+  { name: "Facebook", img: Facebook },
+  { name: "Google", img: Google },
 ];
 
 const InfoBox = ({ icon, title, description }) => {
   return (
-    <div className="col-md-4">
+    <div className="info-box-wrapper">
       <div className="icon-box">
-        <div className="icon">
-          <i className={icon}></i>
-        </div>
+        <div className="icon">{icon}</div>
         <h3 className="title">{title}</h3>
         <p className="des">{description}</p>
       </div>
@@ -78,14 +48,34 @@ const PartnersSection = () => {
           <div className="col-lg-12">
             <Swiper
               modules={[Autoplay]}
-              slidesPerView={5}
-              spaceBetween={10}
               loop={true}
               speed={4000}
               grabCursor={true}
               freeMode={true}
               freeModeMomentum={false}
               autoplay={{ delay: 0, disableOnInteraction: false }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                480: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                992: {
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                },
+                1200: {
+                  slidesPerView: 5,
+                  spaceBetween: 10,
+                },
+              }}
               className="brand-logo"
             >
               {logos.map((logo, i) => (
@@ -98,7 +88,7 @@ const PartnersSection = () => {
         </div>
 
         {/* Info Boxes */}
-        <div className="row mb--10em">
+        <div className="info-boxes-row">
           <InfoBox
             icon={<GiBullseye />}
             title="Digitized Solutions"
@@ -107,7 +97,7 @@ const PartnersSection = () => {
           <InfoBox
             icon={<HiOutlineLightBulb />}
             title="Industry Expertise"
-            description="Our web development and Digital experts are masters in their field and execute what industry needs"
+            description="Our web development and digital experts are masters in their field and execute what industry needs"
           />
           <InfoBox
             icon={<PiHandCoinsDuotone />}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./ServicesWeProvide.css";
+// import { LaptopSvg } from "../components/svg";
 import {
   FaLaptopCode,
   FaMobileAlt,

@@ -45,7 +45,7 @@
 
 /* Dashed inner border always visible */
 .serviceWe-card::before {
-    content: "";
+    content: " ";
     position: absolute;
     top: 15px;
     bottom: 15px;
@@ -103,7 +103,13 @@
     text-align: center;
     margin: 20px 0;
 }
+.serviceWe-icon svg {
+    transition: fill 0.3s;
+}
 
+.serviceWe-card:hover .serviceWe-icon svg {
+    fill: white;
+}
 
 /* Check icon at bottom */
 .checkWe-icon {
@@ -118,8 +124,7 @@
 }
 
 /* Hover styles */
-.serviceWe-card:hover .serviceWe-title,
-.serviceWe-card:hover .serviceWe-icon{
+.serviceWe-card:hover .serviceWe-title{
     color: white;
 }
 
