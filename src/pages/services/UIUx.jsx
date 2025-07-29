@@ -1,6 +1,61 @@
 import React from "react";
-import "./UIUX.css";
+import "./Consulting.css";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
+import LiImage from "../../assets/new-img1.png";
+import {
+  FaMobileAlt,
+  FaPaintBrush,
+  FaChartLine,
+  FaBullhorn,
+  FaCogs,
+  FaCloud,
+} from "react-icons/fa";
+
+const services = [
+  {
+    id: 1,
+    slug: "web-development",
+    title: "Website Design & Development",
+    icon: <FaPaintBrush />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 2,
+    slug: "web-app-development",
+    title: "Mobile App Development",
+    icon: <FaMobileAlt />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 3,
+    slug: "ui-ux",
+    title: "UI/UX Design",
+    icon: <FaCogs />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 4,
+    slug: "seo",
+    title: "SEO Services",
+    icon: <FaChartLine />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 5,
+    slug: "social-media-management",
+    title: "SMM Services",
+    icon: <FaBullhorn />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 6,
+    slug: "pay-per-click-services",
+    title: "PPC Services",
+    icon: <FaCloud />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+];
 
 const UIUX = () => {
   return (
@@ -46,61 +101,87 @@ const UIUX = () => {
         <ul>
           <li>
             <h4>Digital Strategy Consulting</h4>
-            {/* <img
-              src="https://navikadigital.com/services/..\assets\images\image-box\new-img1"
-              alt=""
-            /> */}
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
           <li>
             <h4>Website Design Consulting</h4>
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
           <li>
             <h4>Website Development Consulting</h4>
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
           <li>
             <h4>Optimizing Emails</h4>
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
           <li>
             <h4>Mobile App Development Consulting</h4>
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
         </ul>
@@ -108,24 +189,26 @@ const UIUX = () => {
 
       {/* Service Highlights */}
       <section className="service-highlights">
+        <h3>Our Services</h3>
         <h2>Determine the Potent</h2>
         <p className="subheading">
           What Establishes <span className="blue">YourCompany</span> as a
           Prominent Web & Digital Consulting Company
         </p>
-        <div className="grid">
-          {[
-            "Relentless Devotion to Work and Project",
-            "Apply Only Validated Strategies",
-            "Regular Monitoring and Reporting",
-            "Keeping Client in a Loop",
-            "Complete Transparency and Honest Collaboration",
-            "Partner with Top Performing Web Development & Digital Marketing Company",
-          ].map((title, i) => (
-            <div key={i} className={`grid-item `}>
-              <h4>0{i + 1}</h4>
-              <h3>{title}</h3>
-              <p>↗</p>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <div className="service-id">{`0${service.id}`}</div>
+              <h3>{service.title}</h3>
+              {service.desc && (
+                <>
+                  <p className="description">{service.desc}</p>
+                  <div className="service-icon">{service.icon}</div>
+                </>
+              )}
+              <span className="service-arrow">
+                <FaArrowUpRightFromSquare />
+              </span>
             </div>
           ))}
         </div>

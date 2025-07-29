@@ -1,8 +1,63 @@
 import React from "react";
 import "./Consulting.css";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
+import LiImage from "../../assets/new-img1.png";
+import {
+  FaMobileAlt,
+  FaPaintBrush,
+  FaChartLine,
+  FaBullhorn,
+  FaCogs,
+  FaCloud,
+} from "react-icons/fa";
 
-const SEO = () => {
+const services = [
+  {
+    id: 1,
+    slug: "web-development",
+    title: "Website Design & Development",
+    icon: <FaPaintBrush />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 2,
+    slug: "web-app-development",
+    title: "Mobile App Development",
+    icon: <FaMobileAlt />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 3,
+    slug: "ui-ux",
+    title: "UI/UX Design",
+    icon: <FaCogs />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 4,
+    slug: "seo",
+    title: "SEO Services",
+    icon: <FaChartLine />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 5,
+    slug: "social-media-management",
+    title: "SMM Services",
+    icon: <FaBullhorn />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+  {
+    id: 6,
+    slug: "pay-per-click-services",
+    title: "PPC Services",
+    icon: <FaCloud />,
+    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+  },
+];
+
+const Consulting = () => {
   return (
     <div className="consulting-page">
       {/* Hero Section */}
@@ -46,61 +101,87 @@ const SEO = () => {
         <ul>
           <li>
             <h4>Digital Strategy Consulting</h4>
-            {/* <img
-              src="https://navikadigital.com/services/..\assets\images\image-box\new-img1"
-              alt=""
-            /> */}
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
           <li>
             <h4>Website Design Consulting</h4>
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
           <li>
             <h4>Website Development Consulting</h4>
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
           <li>
             <h4>Optimizing Emails</h4>
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
           <li>
             <h4>Mobile App Development Consulting</h4>
             <p>
-              Our digital marketing consulting company easily comprehends your
-              aspirations. We line up existing and anticipated business
-              outcomes, pushing your business to a high peak. Evaluating your
-              web marketing service requirement, creating an extreme level of
-              online marketing approach, and planning tactical organic and paid
-              marketing are our fully-fledged policies for starting any project.
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Our digital marketing consulting company easily comprehends your
+                aspirations. We line up existing and anticipated business
+                outcomes, pushing your business to a high peak. Evaluating your
+                web marketing service requirement, creating an extreme level of
+                online marketing approach, and planning tactical organic and
+                paid marketing are our fully-fledged policies for starting any
+                project.
+              </div>
             </p>
           </li>
         </ul>
@@ -113,25 +194,98 @@ const SEO = () => {
           What Establishes <span className="blue">YourCompany</span> as a
           Prominent Web & Digital Consulting Company
         </p>
-        <div className="grid">
-          {[
-            "Relentless Devotion to Work and Project",
-            "Apply Only Validated Strategies",
-            "Regular Monitoring and Reporting",
-            "Keeping Client in a Loop",
-            "Complete Transparency and Honest Collaboration",
-            "Partner with Top Performing Web Development & Digital Marketing Company",
-          ].map((title, i) => (
-            <div key={i} className={`grid-item `}>
-              <h4>0{i + 1}</h4>
-              <h3>{title}</h3>
-              <p>↗</p>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <div className="service-id">{`0${service.id}`}</div>
+              <h3>{service.title}</h3>
+              {service.desc && (
+                <>
+                  <p className="description">{service.desc}</p>
+                  <div className="service-icon">{service.icon}</div>
+                </>
+              )}
+              <span className="service-arrow">
+                <FaArrowUpRightFromSquare />
+              </span>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="uiux-tools-section">
+        <div className="tools-heading">
+          <h2>Tools We Use in UI/UX design</h2>
+          <p>
+            UX design applies to both physical and digital services/products. It
+            helps in creating framework design solutions for obstacles that
+            users meet while using the product or website. It focuses on
+            improving the complete user experience from the beginning to the
+            final phase. The objective of UX design is to deliver a product that
+            makes users contented because of their efficiency. While UI design
+            applies only to digital services and products. User interface design
+            distillates visual aspects that enable users to align with the
+            product. UI involves in making a blend of images, animation, colors,
+            typography etc. User Interface design (UI) aims to customize a
+            product that provides creative and visual satisfaction to users. We
+            use software for UI/UX designs:
+          </p>
+        </div>
+
+        <div className="tools-grid-wrapper">
+          <div className="tools-image">
+            <img
+              src="https://img.freepik.com/free-photo/businessman-holding-tablet_23-2147770535.jpg"
+              alt="UI/UX Tools"
+            />
+          </div>
+          <div className="tools-grid">
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                alt="Figma"
+              />
+              <p>Figma</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop"
+              />
+              <p>PhotoShop</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+                alt="Illustrator"
+              />
+              <p>Illustrator</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Corel Draw"
+              />
+              <p>Corel Draw</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                alt="Canva"
+              />
+              <p>Canva</p>
+            </div>
+            <div className="tool">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
+                alt="InDesign"
+              />
+              <p>InDesign</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
   );
 };
 
-export default SEO;
+export default Consulting;
