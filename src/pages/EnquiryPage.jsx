@@ -14,10 +14,9 @@ const EnquirySection = () => {
             <span>Digitally</span>
           </h2>
           <p className="enquiry-description">
-            As a responsible, capable, veteran, devoted and outcome- <br />
-            driven IT company, Navika Digital has proved itself every time.{" "}
-            <br />
-            We are ready to create history in every upcoming moment.
+            As a responsible, capable, veteran, devoted and outcome- driven IT
+            company, Navika Digital has proved itself every time. We are ready
+            to create history in every upcoming moment.
           </p>
 
           <div className="contact-block">

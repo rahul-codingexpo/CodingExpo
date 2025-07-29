@@ -40,6 +40,7 @@
     color: #ccc;
     font-size: 16px;
     line-height: 1.7;
+    width:400px;
 }
 
 .contact-block {
@@ -159,12 +160,24 @@
     .enquiry-container {
         flex-direction: column;
         padding: 40px 20px;
+        gap:40px;
     }
-
+        .enquiry-left{
+            margin-left: 0px;
+        }
+        .enquiry-description{
+            margin-right: 30px;
+            width:310px;
+        }
     .enquiry-left h2 {
         font-size: 28px;
     }
-
+    .form-card{
+        margin-right: 40px;
+    }
+        .enquiry-form button{
+            width: 80%;
+        }
     .form-row {
         flex-direction: column;
     }

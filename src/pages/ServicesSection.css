@@ -437,37 +437,112 @@ h3 {
 
 /* Mobile View */
 @media (max-width: 576px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-        margin: 20px;
+    .services-wrapper {
+        padding: 40px 10px;
+    }
+
+    .services-heading {
+        margin-bottom: 30px;
+        padding-inline: 10px;
+    }
+        .service-card:hover .service-id {
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 100px;
+            z-index: 0;
+        }
+    .subheading {
+        font-size: 14px;
+        margin-bottom: 6px;
     }
 
     .main-heading {
-        font-size: 24px;
+        font-size: 22px;
+        line-height: 1.3;
     }
 
-    .experience-title {
-        font-size: 28px;
+    .services-grid {
+        grid-template-columns: 1fr;
+        margin: 0px 10px;
+        gap: 20px;
     }
 
-    .experience-description {
+    .service-card {
+        height: auto;
+        padding: 16px 20px;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    /* .service-id {
+        font-size: 16px;
+    } */
+
+    .service-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        visibility: visible !important;
+        color: #555 !important;
         font-size: 14px;
+        padding-block: 10px;
+        line-height: 1.5;
     }
 
-    .experience-card {
-        width: 180px;
-        padding: 15px;
-        left: 15px;
-        bottom: 15px;
+    .service-icon {
+        font-size: 28px;
+        margin-top: 12px;
+        color: #2b65c8;
+    }
+
+    .read-more {
+        display: inline-block;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        font-size: 14px;
+        margin-top: 8px;
+        color: #2b65c8;
+    }
+
+    .service-arrow {
+        display: none !important;
     }
 
     .cta-box {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
-        gap: 10px;
+        padding: 16px;
+        gap: 8px;
         font-size: 14px;
+        margin-inline: 10px;
+        margin-top: 40px;
         text-align: left;
+    }
+
+    .experience-section {
+        flex-direction: column;
+        padding: 40px 10px;
+        gap: 30px;
+    }
+
+    .experience-left,
+    .experience-right {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .experience-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .experience-subtitle {
+        font-size: 16px;
+    }
+
+    .experience-description {
+        font-size: 14px;
     }
 
     .experience-stats {
@@ -475,24 +550,38 @@ h3 {
         gap: 20px;
     }
 
-    .service-card {
+    .experience-image {
         height: auto;
+        max-height: 320px;
+    }
+
+    .experience-card {
+        bottom: 15px;
+        left: 15px;
+        width: 160px;
         padding: 15px;
+        font-size: 14px;
     }
 
-    .service-card:hover .description {
-        padding-block: 15px;
+    .experience-card h2 {
+        font-size: 30px;
     }
 
-    .service-arrow {
-        display: none !important;
+    .rating-box {
+        font-size: 14px;
+        padding: 4px 10px;
     }
 
     .section-marque-text {
-        padding: 40px 10px;
+        padding: 30px 10px;
     }
 
     .marquee-item {
         font-size: 14px;
+        gap: 20px;
     }
+}
+body,
+html {
+    overflow-x: hidden;
 }
