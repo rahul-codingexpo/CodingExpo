@@ -439,6 +439,7 @@ h3 {
 @media (max-width: 576px) {
     .services-wrapper {
         padding: 40px 10px;
+        width:100%;
     }
 
     .services-heading {
@@ -464,28 +465,33 @@ h3 {
         grid-template-columns: 1fr;
         margin: 0px 10px;
         gap: 20px;
+        /* width: 70%; */
     }
 
     .service-card {
-        height: auto;
         padding: 16px 20px;
         border-radius: 10px;
+        margin: 0px 10px;
         text-align: left;
     }
 
-    /* .service-id {
-        font-size: 16px;
-    } */
 
     .service-card h3 {
         font-size: 18px;
         margin-bottom: 10px;
+        width:70%
     }
+        .description{
+            visibility: hidden !important;
+            display: none;
+        }
 
-    .description {
+    .service-card:hover .description {
         visibility: visible !important;
-        color: #555 !important;
+        display: block;
+        color: #fff !important;
         font-size: 14px;
+        width: 70%;
         padding-block: 10px;
         line-height: 1.5;
     }
@@ -495,18 +501,17 @@ h3 {
         margin-top: 12px;
         color: #2b65c8;
     }
-
-    .read-more {
-        display: inline-block;
+    .read-more{
+            /* visibility: hidden !important; */
+            display: none;
+        }
+    .service-card:hover .read-more {
+        display: block;
         opacity: 1 !important;
         pointer-events: auto !important;
         font-size: 14px;
         margin-top: 8px;
-        color: #2b65c8;
-    }
-
-    .service-arrow {
-        display: none !important;
+        color: #fff;
     }
 
     .cta-box {
@@ -514,22 +519,23 @@ h3 {
         align-items: flex-start;
         padding: 16px;
         gap: 8px;
-        font-size: 14px;
+        font-size: 17px;
         margin-inline: 10px;
         margin-top: 40px;
         text-align: left;
+        margin-bottom: 40px;
     }
 
     .experience-section {
         flex-direction: column;
-        padding: 40px 10px;
+        padding: 20px 10px;
         gap: 30px;
     }
 
     .experience-left,
     .experience-right {
         max-width: 100%;
-        padding: 0;
+        padding: 10px;
     }
 
     .experience-title {
@@ -558,18 +564,23 @@ h3 {
     .experience-card {
         bottom: 15px;
         left: 15px;
-        width: 160px;
+        width: 100px;
         padding: 15px;
         font-size: 14px;
     }
 
     .experience-card h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
-
+    .experience-card p{
+        font-size: 10px;
+    }
+    .rating{
+        display: none;
+    }
     .rating-box {
         font-size: 14px;
-        padding: 4px 10px;
+        padding: 0px 5px;
     }
 
     .section-marque-text {
