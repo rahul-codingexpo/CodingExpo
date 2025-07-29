@@ -11,7 +11,7 @@
 }
 
 .subheading {
-    color: #3f61ce;
+    color: #2b6cb0;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -45,7 +45,7 @@
 }
 
 .service-card:hover {
-    background-color: #2b65c8;
+    background-color: #2b6cb0;
     color: #fff;
     cursor: pointer;
 }
@@ -53,7 +53,7 @@
 .service-id {
     font-size: 14px;
     font-weight: 600;
-    color: #3f61ce;
+    color: #2b6cb0;
     margin-bottom: 10px;
     transition: 0.3s ease;
 }
@@ -74,7 +74,7 @@ h3 {
 
 .service-icon {
     font-size: 40px;
-    color: #3f61ce;
+    color: #2b6cb0;
     margin-top: auto;
     transition: 0.3s ease;
     z-index: 1;
@@ -141,10 +141,6 @@ h3 {
     padding-top: 40px;
 }
 
-/* .service-card:hover .service-arrow {
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-} */
  .service-card:hover .service-arrow {
      display: none;
  }
@@ -170,7 +166,7 @@ h3 {
 }
 
 .cta-link {
-    color: #2b65c8;
+    color: #2b6cb0;
     font-weight: 700;
     text-decoration: none;
     margin-left: 10px;
@@ -203,7 +199,7 @@ h3 {
 }
 
 .experience-subtitle {
-    color: #0056d2;
+    color: #2b6cb0;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 15px;
@@ -236,7 +232,7 @@ h3 {
     width: 70px;
     height: 70px;
     background: white;
-    border: 6px solid #0056d2;
+    border: 6px solid #2b6cb0;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -270,7 +266,7 @@ h3 {
     position: absolute;
     bottom: 50px;
     left: 50px;
-    background: #356ab4;
+    background: #2b6cb0;
     color: white;
     padding: 30px;
     width: 240px;
@@ -298,7 +294,7 @@ h3 {
     top: 10px;
     right: 10px;
     background: white;
-    color: #1c57c9;
+    color: #2b6cb0;
     padding: 5px 12px;
     font-weight: bold;
     font-size: 18px;
@@ -330,7 +326,7 @@ h3 {
 }
 
 .animated-circle {
-    stroke: #0056d2;
+    stroke: #2b6cb0;
     stroke-dasharray: 220;
     stroke-dashoffset: 220;
     transition: stroke-dashoffset 5s ease;
@@ -349,7 +345,7 @@ h3 {
 }
 
 .section-marque-text {
-    background-color: #356ab4;
+    background-color: #2b6cb0;
     padding: 60px 0px;
     overflow: hidden;
         margin-top: -4px;
@@ -446,6 +442,9 @@ h3 {
         margin-bottom: 30px;
         padding-inline: 10px;
     }
+        .service-card:hover{
+            padding: 45px 10px;
+        }
         .service-card:hover .service-id {
             color: rgba(255, 255, 255, 0.2);
             font-size: 100px;
@@ -465,7 +464,7 @@ h3 {
         grid-template-columns: 1fr;
         margin: 0px 10px;
         gap: 20px;
-        /* width: 70%; */
+       
     }
 
     .service-card {
@@ -499,13 +498,14 @@ h3 {
     .service-icon {
         font-size: 28px;
         margin-top: 12px;
-        color: #2b65c8;
+        color: #2b6cb0;
     }
     .read-more{
-            /* visibility: hidden !important; */
+            visibility: hidden !important;
             display: none;
         }
     .service-card:hover .read-more {
+        visibility: visible !important;
         display: block;
         opacity: 1 !important;
         pointer-events: auto !important;
