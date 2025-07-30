@@ -8,7 +8,6 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
       <Header />
       <Navbar />
       <AllRoutes />
@@ -16,6 +15,7 @@ function App() {
       <p style={{ textAlign: "center" }}>
         © 2025 CodingExpo Technology. All rights reserved.
       </p>
+      <ScrollToTop />
     </BrowserRouter>
   );
 }
