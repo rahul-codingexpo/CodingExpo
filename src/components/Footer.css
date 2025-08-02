@@ -1,7 +1,6 @@
 .footer {
     background: #f9f9f9;
     padding: 40px 20px;
-    font-family: Arial, sans-serif;
 }
 
 .footer-container {
@@ -19,8 +18,10 @@
 }
 
 .footer-section h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    color: #222222;
 }
 
 .footer-section ul {
@@ -29,15 +30,15 @@
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
-    color: #333;
+    margin-bottom: 20px;
+    color: #696969;
     cursor: pointer;
 }
 
 .company-info p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5rem;
+        font-family: "Manrope", sans-serif;
+        line-height: 30px;
+        color: #696969;
     
 }
 
@@ -59,7 +60,11 @@
     background-color: rgb(255, 197, 122);
 }
 
-
+.newsletter p{
+    font-family: "Manrope", sans-serif;
+        line-height: 30px;
+        color: #696969;
+}
 .newsletter form {
     display: flex;
     flex-direction: column;
@@ -74,12 +79,13 @@
 
 .newsletter button {
     padding: 10px;
-    background: #255fc8;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    font-size: 15px;
     cursor: pointer;
     width: 50%;
+    background-color: #356ab4 !important;
+    border-radius: 10px;
 }
 
 .policy-text {

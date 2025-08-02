@@ -15,15 +15,15 @@ const EnquirySection = () => {
           </h2>
           <p className="enquiry-description">
             As a responsible, capable, veteran, devoted and outcome- driven IT
-            company, Navika Digital has proved itself every time. We are ready
-            to create history in every upcoming moment.
+            company, CodingExpo has proved itself every time. We are ready to
+            create history in every upcoming moment.
           </p>
 
           <div className="contact-block">
             <div className="contact-item">
               <FaPhoneAlt className="icon" />
               <div>
-                <p className="label">Call For Inquiry</p>
+                <span className="label">Call For Inquiry</span>
                 <br />
                 <p className="value">+91-93158 65976</p>
                 <p className="value">+91-77669 57363</p>
@@ -34,8 +34,9 @@ const EnquirySection = () => {
             <div className="contact-item">
               <FaEnvelope className="icon" />
               <div>
-                <p className="label">Send Us Email</p>
-                <p className="value">info@navikadigital.com</p>
+                <span className="label">Send Us Email</span>
+                <br />
+                <p className="value">info@codingexpo.org</p>
               </div>
             </div>
           </div>

@@ -38,7 +38,7 @@ const ServicesWeProvide = () => {
     <section className="serviceWe-section">
       <div className="servicesWe-container">
         <p className="servicesWe-subtitle">What We Provide</p>
-        <h2 className="servicesWe-title">
+        <h2 className="servicesWeTop-title">
           Our Web Development and Digital <br /> Services Create Winning Tales
         </h2>
 

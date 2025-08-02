@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { MdOutlineNavigateNext } from "react-icons/md";
 import {
   RiFacebookFill,
   RiTwitterFill,
@@ -48,13 +49,34 @@ const Footer = () => {
         <div className="footer-section">
           <h4>IT Services</h4>
           <ul>
-            <li>Website Designing</li>
-            <li>Website Development</li>
-            <li>Mobile App Development</li>
-            <li>E-Commerce development</li>
-            <li>SEO Services</li>
-            <li>SMM Services</li>
-            <li>PPC Services</li>
+            <li>
+              <MdOutlineNavigateNext />
+              Website Designing
+            </li>
+            <li>
+              <MdOutlineNavigateNext />
+              Website Development
+            </li>
+            <li>
+              <MdOutlineNavigateNext />
+              Mobile App Development
+            </li>
+            <li>
+              <MdOutlineNavigateNext />
+              E-Commerce development
+            </li>
+            <li>
+              <MdOutlineNavigateNext />
+              SEO Services
+            </li>
+            <li>
+              <MdOutlineNavigateNext />
+              SMM Services
+            </li>
+            <li>
+              <MdOutlineNavigateNext />
+              PPC Services
+            </li>
           </ul>
         </div>
 
@@ -62,8 +84,14 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Support & Quicklinks</h4>
           <ul>
-            <li>Contact Us</li>
-            <li>Payment</li>
+            <li>
+              <MdOutlineNavigateNext />
+              Contact Us
+            </li>
+            <li>
+              <MdOutlineNavigateNext />
+              Payment
+            </li>
           </ul>
         </div>
 

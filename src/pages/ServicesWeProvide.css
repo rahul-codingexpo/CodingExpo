@@ -1,7 +1,5 @@
-
 .serviceWe-section {
     width: 100%;
-
 }
 
 .servicesWe-container {
@@ -9,6 +7,11 @@
     padding: 30px 0px;
     background-color: #f8f8f8;
     width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../assets/bg-feature2.png");
+    padding: 180px 0 100px 0;
 }
 
 .servicesWe-subtitle {
@@ -16,6 +19,11 @@
     font-weight: 600;
     margin-bottom: 10px;
     font-size: 18px;
+}
+.servicesWeTop-title{
+    font-size: 40px;
+    line-height: 55px;
+    color: #222222;
 }
 .servicesWe-grid {
     display: flex;
@@ -43,7 +51,6 @@
     transition: all 0.3s ease;
 }
 
-/* Dashed inner border always visible */
 .serviceWe-card::before {
     content: " ";
     position: absolute;
@@ -75,7 +82,7 @@
     height: calc(100%);
     
 }
-/* Bring content above ::before */
+
 .serviceWe-icon,
 .serviceWe-title,
 .checkWe-icon {
@@ -83,7 +90,6 @@
     position: relative;
 }
 
-/* Icon at the top */
 .serviceWe-icon {
     color: #2b6cb0;
     font-size: 40px;
@@ -95,13 +101,14 @@
     transform: scaleX(-1);
     
 }
-/* Title in center */
+
 .serviceWe-title {
-    font-size: 1.2rem;
     font-weight: 600;
-    color: black;
-    text-align: center;
-    margin: 20px 0;
+        color: #222222;
+        text-align: center;
+        margin: 20px 15px;
+        font-size: 20px;
+        line-height: 30px;
 }
 .serviceWe-icon svg {
     transition: fill 0.3s;
@@ -111,7 +118,6 @@
     fill: white;
 }
 
-/* Check icon at bottom */
 .checkWe-icon {
     margin-bottom: 10px;
 }
@@ -123,7 +129,6 @@
     transition: color 0.3s ease;
 }
 
-/* Hover styles */
 .serviceWe-card:hover .serviceWe-title{
     color: white;
 }

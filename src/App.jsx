@@ -8,14 +8,15 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Header />
+
       <Navbar />
       <AllRoutes />
       <Footer />
-      <p style={{ textAlign: "center" }}>
+      <p style={{ textAlign: "left", color: "#696969", "margin-left": "20px" }}>
         © 2025 CodingExpo Technology. All rights reserved.
       </p>
-      <ScrollToTop />
     </BrowserRouter>
   );
 }

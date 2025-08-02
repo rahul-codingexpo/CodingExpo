@@ -7,18 +7,20 @@ import mask from "../assets/mask.png";
 const slides = [
   {
     bg: s1,
-    title: "Robust Web and Digital Solution to build To build a Brand",
+    title: "Robust Web and Digital Solution to Build A Brand",
     subtitle1: " 700+ trusted our clients",
-    subtitle2: "This is the first slide subtitle ",
+    subtitle2:
+      "8+ Years of Expertise in Accelerating Web and Digital Solutions ",
     buttonText: "Explore our Services",
     buttonLink: "#",
     animatedImg: mask,
   },
   {
     bg: s2,
-    title: "Robust Web and Digital Solution To build a Brand",
+    title: "Robust Web and Digital Solution to Build A Brand",
     subtitle1: "700+ trusted our clients",
-    subtitle2: "Here’s some more info on slide two",
+    subtitle2:
+      "8+ Years of Expertise in Accelerating Web and Digital Solutions",
     buttonText: "Explore our Services",
     buttonLink: "#",
     animatedImg: mask,
@@ -50,9 +52,11 @@ export default function HeroCarousel() {
               </h2>
               <h1>{s.title}</h1>
               <p>{s.subtitle2}</p>
-              <a href={s.buttonLink} className="btn">
-                {s.buttonText}
-              </a>
+              <div className="slide-btn">
+                <a href={s.buttonLink} className="btn">
+                  {s.buttonText}
+                </a>
+              </div>
             </div>
             <img src={s.animatedImg} alt="" className="animated-img" />
           </div>

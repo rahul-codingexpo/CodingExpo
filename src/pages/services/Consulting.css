@@ -200,7 +200,7 @@
             padding: 40px 20px !important;
         }
         .hero-image img {
-            width: 330px;
+            width: 100%;
             border-radius: 5px;
         }
         .detailed-services ul{

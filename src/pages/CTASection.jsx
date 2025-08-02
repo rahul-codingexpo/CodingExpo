@@ -12,7 +12,9 @@ const CTASection = () => {
           <p>
             Let’s{" "}
             <strong>
-              <u>Discuss & Start</u>
+              <i>
+                <u>Discuss & Start</u>
+              </i>
             </strong>{" "}
             IT Consultations
           </p>

@@ -12,18 +12,24 @@ const Header = () => {
   return (
     <div className="header-top">
       <div className="header-left">
-        <HiOutlineMail className="icon" />
-        <span>info@codingexpo.org</span>
-        &nbsp;
-        <a
-          href="https://maps.app.goo.gl/839nbkHRZ74BJDyN6"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <div className="icon-text">
+          <div>
+            <HiOutlineMail />
+          </div>
+          <div>
+            <span>info@codingexpo.org</span>
+          </div>
+        </div>
+        <div className="icon-text">
           <FaMapMarkerAlt />
-          &nbsp;
-          <span>S2, G-34, Block G, Sec-3, Noida, Uttar Pradesh, India</span>
-        </a>
+          <a
+            href="https://maps.app.goo.gl/839nbkHRZ74BJDyN6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>S2, G-34, Block G, Sec-3, Noida, Uttar Pradesh, India</span>
+          </a>
+        </div>
       </div>
       <div className="header-right">
         <a

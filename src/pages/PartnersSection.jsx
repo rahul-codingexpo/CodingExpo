@@ -56,16 +56,16 @@ const PartnersSection = () => {
               autoplay={{ delay: 0, disableOnInteraction: false }}
               breakpoints={{
                 320: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
+                  slidesPerView: 3,
+                  spaceBetween: 5,
                 },
                 480: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
+                  slidesPerView: 3,
+                  spaceBetween: 5,
                 },
                 768: {
                   slidesPerView: 3,
-                  spaceBetween: 10,
+                  spaceBetween: 5,
                 },
                 992: {
                   slidesPerView: 4,
@@ -92,7 +92,7 @@ const PartnersSection = () => {
           <InfoBox
             icon={<GiBullseye />}
             title="Digitized Solutions"
-            description="We believe in delivering excellent digitized solutions in an innovative way and perspective"
+            description="Our web development and digital experts are masters in their field and execute what industry needs"
           />
           <InfoBox
             icon={<HiOutlineLightBulb />}
@@ -102,7 +102,7 @@ const PartnersSection = () => {
           <InfoBox
             icon={<PiHandCoinsDuotone />}
             title="Proven Results"
-            description="Our web development and digital services provide proven result with budget friendly expenses"
+            description="Our web development and digital experts are masters in their field and execute what industry needs"
           />
         </div>
       </div>

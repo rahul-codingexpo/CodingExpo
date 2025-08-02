@@ -9,6 +9,8 @@ import ServiceWeProvide from "./ServicesWeProvide";
 import CTASection from "./CTASection";
 import Testimonials from "./TestimonialSection";
 import Enquiry from "./EnquiryPage";
+import ExperiencePage from "./Experience";
+import MarqueePage from "./Marquee";
 function Home() {
   return (
     <div className="home-container">
@@ -18,6 +20,8 @@ function Home() {
       <PartnersSection />
       <About />
       <Service />
+      <ExperiencePage />
+      <MarqueePage />
       <ServiceWeProvide />
       <CTASection />
       <Testimonials />
