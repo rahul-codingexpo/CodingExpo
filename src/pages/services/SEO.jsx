@@ -2,6 +2,7 @@ import React from "react";
 import "./Consulting.css";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
+import TechImage from "../../assets/technology1.jpg";
 import LiImage from "../../assets/new-img1.png";
 import {
   FaMobileAlt,
@@ -233,10 +234,7 @@ const Consulting = () => {
 
         <div className="tools-grid-wrapper">
           <div className="tools-image">
-            <img
-              src="https://img.freepik.com/free-photo/businessman-holding-tablet_23-2147770535.jpg"
-              alt="UI/UX Tools"
-            />
+            <img src={TechImage} alt="UI/UX Tools" />
           </div>
           <div className="tools-grid">
             <div className="tool">

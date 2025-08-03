@@ -241,6 +241,10 @@
 
     .experience-card h2 {
         font-size: 20px;
+        line-height: 30px;
+    }
+    .icon-svg svg{
+        width: 100px;
     }
 
     .experience-card p {

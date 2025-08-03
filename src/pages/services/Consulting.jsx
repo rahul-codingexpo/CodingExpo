@@ -190,10 +190,10 @@ const Consulting = () => {
       {/* Service Highlights */}
       <section className="service-highlights">
         <h2>Determine the Potent</h2>
-        <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
-        </p>
+        <span className="service-subheading">
+          What Establishes YourCompany as a Prominent Web & Digital Consulting
+          Company
+        </span>
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-card">

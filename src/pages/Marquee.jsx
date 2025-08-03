@@ -2,25 +2,30 @@ import React from "react";
 import "./Marquee.css";
 
 const MarqueePage = () => {
+  const items = [
+    "Website Design & Development",
+    "Mobile App Development",
+    "E-Commerce Development",
+    "SEO Services",
+    "SMM Services",
+    "PPC Services",
+  ];
+
+  const renderItems = () =>
+    items.map((text, idx) => (
+      <React.Fragment key={idx}>
+        <i className="icon-asterisk"></i>
+        <span className="text-slider">{text}</span>
+      </React.Fragment>
+    ));
+
   return (
     <section className="section-marque-text bb-blog">
       <div className="marquee-wrapper text-slider">
         <div className="marquee-inner to-left">
-          <ul className="marqee-list d-flex">
-            <li className="marquee-item">
-              <i className="icon-asterisk"></i>
-              <span className="text-slider">Website Design & Development</span>
-              <i className="icon-asterisk"></i>
-              <span className="text-slider">Mobile App Development</span>
-              <i className="icon-asterisk"></i>
-              <span className="text-slider">E-Commerce Development</span>
-              <i className="icon-asterisk"></i>
-              <span className="text-slider">SEO Services</span>
-              <i className="icon-asterisk"></i>
-              <span className="text-slider">SMM Services</span>
-              <i className="icon-asterisk"></i>
-              <span className="text-slider">PPC Services</span>
-            </li>
+          <ul className="marqee-list d-flex marquee-track">
+            <li className="marquee-item">{renderItems()}</li>
+            <li className="marquee-item">{renderItems()}</li>
           </ul>
         </div>
       </div>

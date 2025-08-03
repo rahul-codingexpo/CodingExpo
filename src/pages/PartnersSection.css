@@ -7,15 +7,12 @@
 
 .tf-container {
     max-width: 1521px;
-    
     padding: 0 15px;
     width: 100%;
     box-sizing: border-box;
 }
 
-/* Swiper */
 .section-partner .col-lg-12 {
-    /* width: 100%;  */
     margin-left:70px;
     margin-right: 70px;
     overflow: hidden;
@@ -51,18 +48,13 @@
     height: 200px;
 }
 
-/* Info Cards Row */
 .info-boxes-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-    margin: 20px;
+    margin: 0 20px;
     padding-left: 50px;
-    padding-right: 50px;
 }
 
-/* Individual Info Box Wrapper */
 .info-box-wrapper {
     flex: 1 1 calc(33.333% - 20px);
     max-width: calc(33.333% - 20px);
@@ -71,10 +63,8 @@
 
 /* Info Card Styling */
 .icon-box {
-    background: #ffffff url("../assets/wave-bg.svg") no-repeat center;
-    background-size: cover;
+    background: #ffffff;
     border-radius: 20px;
-    padding: 40px 30px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;
     text-align: left;
@@ -84,31 +74,35 @@
     position: relative;
     z-index: 0;
     margin: 0px 20px;
-    /* height: 100%; */
     min-height: 180px;
     overflow: hidden;
     cursor: default;
     border-bottom: 4px solid #356ab4;
 }
+.svg-block{
+    position: absolute;
+    opacity: 0.15;
+
+}
+ .content-block{
+    position: relative;
+    padding: 40px 50px;
+ }
 
 .icon-box .icon {
     font-size: 40px;
     color: #2f6cd1;
-    transition: transform 0.3s ease, font-size 0.3s ease;
+    transition: transform 0.3s ease, font-size 0.3s ease, color 0.3s ease;
     display: inline-block;
     z-index: 2;
-}
-
-.icon-box:hover .icon {
-    transform: scale(1.5);
-    margin-left: 100px;
+    margin-bottom: 30px;
 }
 
 .icon-box .title {
     font-size: 23px;
     font-weight: 700;
     text-align: left;
-    margin-bottom: 15px;
+    margin: 15px 0 15px 0;
     color: #222;
     position: relative;
     z-index: 2;
@@ -117,10 +111,12 @@
 
 .icon-box .des {
     font-size: 16px;
-    line-height: 1.6;
-    color: #555;
+    font-family: "Manrope", sans-serif;
+    line-height: 30px;
+    color: #696969;
     position: relative;
     z-index: 2;
+    margin-bottom:26px ;
     transition: color 0.3s ease;
 }
 
@@ -143,11 +139,20 @@
 .icon-box:hover::after {
     transform: scaleY(1);
 }
+.icon-box:hover .icon {
+    color: #fff !important;
+}
 
-.icon-box:hover .icon,
+.icon-box:hover .svg-block {
+    color: #fff;
+    z-index: 1;
+    opacity: 0.5;
+}
+
 .icon-box:hover .title,
 .icon-box:hover .des {
     color: #fff;
+        
 }
 
 /* RESPONSIVE MEDIA QUERIES */
@@ -156,40 +161,6 @@
     .info-box-wrapper {
         flex: 1 1 48%;
         max-width: 48%;
-    }
-}
-
-@media (max-width: 992px) {
-    .info-box-wrapper {
-            flex: 1 1 calc(50% - 15px);
-            max-width: calc(50% - 15px);
-        }
-    
-        .info-boxes-row {
-            gap: 20px;
-            padding: 10px;
-        }
-
-    .icon-box {
-        padding: 25px 20px;
-        margin-bottom: 10px;
-    }
-
-    .icon-box .icon {
-        font-size: 32px;
-        margin-left: 0;
-    }
-
-    .icon-box:hover .icon {
-        margin-left: 0;
-    }
-
-    .icon-box .title {
-        font-size: 18px;
-    }
-
-    .icon-box .des {
-        font-size: 15px;
     }
 }
 
@@ -228,7 +199,7 @@
             padding: 0 10px;
         }
     .icon-box {
-        padding: 30px 15px;
+        padding: 0px 0px;
     }
 
     .icon-box .icon {
