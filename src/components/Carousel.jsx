@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "./Carousel.css";
 import s1 from "../assets/slide1.jpg";
 import s2 from "../assets/slide2.jpg";
 import mask from "../assets/mask.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const slides = [
   {
     bg: s1,
@@ -38,6 +41,10 @@ export default function HeroCarousel() {
     speed: 1000,
     cssEase: "linear",
   };
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
     <div className="hero-carousel">

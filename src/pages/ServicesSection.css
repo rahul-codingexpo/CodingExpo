@@ -99,6 +99,9 @@
 .service-card:hover .service-icon {
     color: #fff;
     background:none;
+    order: -1;
+    margin-bottom: 10px;
+    
 }
 
 .description {

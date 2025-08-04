@@ -10,7 +10,6 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <Header />
-
       <Navbar />
       <AllRoutes />
       <Footer />
