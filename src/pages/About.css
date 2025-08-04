@@ -111,7 +111,7 @@
 @media (max-width: 992px) {
     .about-container {
         flex-direction: column;
-        padding: 0 36px;
+        padding: 0 15px;
     }
 
     .about-image,
@@ -121,12 +121,6 @@
         margin-top: 0;
         padding: 0;
     }
-
-    .about-title {
-        font-size: 28px;
-    
-    }
-
     .about-highlight {
         font-size: 20px;
     }
@@ -144,10 +138,16 @@
 
 /* Extra small screens */
 @media (max-width: 576px) {
-
+    .about-section{
+        padding-top: 0px;
+    }
+    .about-subtitle{
+        padding: 0 0 0 36px;
+    }
     .about-title {
         font-size: 36px;
         line-height: 45px;
+        padding: 0 0 0 36px;
     }
 
     .about-highlight {

@@ -198,29 +198,36 @@
 
 @media (max-width: 576px) {
     .experience-section {
-        padding: 20px 10px;
+        padding: 0px 10px;
         gap: 30px;
     }
 
-    .experience-left,
+    .experience-left{
+        max-width: 100%;
+        padding: 1rem;
+    }
     .experience-right {
         max-width: 100%;
-        padding: 10px;
+        padding: 0 1rem;
     }
 
     .experience-title {
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 36px;
+        line-height: 45px;
     }
 
     .experience-subtitle {
-        font-size: 16px;
+        margin:0 0 17px 0;
     }
 
     .experience-description {
-        font-size: 14px;
+        margin-top: 29px;
     }
-
+    .percentage{
+        font-size: 24px;
+        font-weight: 600 !important;
+        display: inline-block;
+    }
     .experience-stats {
         flex-direction: column;
         gap: 20px;
@@ -232,10 +239,10 @@
     }
 
     .experience-card {
-        bottom: 15px;
-        left: 15px;
+        bottom: 20px;
+        left: 16px;
         width: 100px;
-        padding: 15px;
+        padding: 5px;
         font-size: 14px;
     }
 

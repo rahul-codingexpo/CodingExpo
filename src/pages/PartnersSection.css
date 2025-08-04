@@ -164,9 +164,9 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .swiper-wrapper {
-        gap: 50px;
+        gap: 30px !important;
     }
 
     .brand-logo img {
@@ -189,7 +189,9 @@
             max-width: 100%;
             
         }
-    
+                .swiper-wrapper {
+                    gap: 30px !important;
+                }
         .info-boxes-row {
         gap: 20px;
         padding: 0px 45px;

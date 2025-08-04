@@ -37,10 +37,12 @@ const ServicesWeProvide = () => {
   return (
     <section className="serviceWe-section">
       <div className="servicesWe-container">
-        <p className="servicesWe-subtitle">What We Provide</p>
-        <h2 className="servicesWeTop-title">
-          Our Web Development and Digital <br /> Services Create Winning Tales
-        </h2>
+        <div className="service-head">
+          <p className="servicesWe-subtitle">What We Provide</p>
+          <h2 className="servicesWeTop-title">
+            Our Web Development and Digital Services Create Winning Tales
+          </h2>
+        </div>
 
         <div className="servicesWe-grid">
           {services.map((service, index) => (

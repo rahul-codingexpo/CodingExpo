@@ -1,8 +1,14 @@
 .enquiry-section {
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: #050f2c;
 }
-
+.enquiry-tf-container{
+max-width: 1320px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .enquiry-container {
     display: flex;
     justify-content: space-between;
@@ -18,12 +24,14 @@
 }
 
 .enquiry-left {
-    /* flex: 1; */
-    margin-left: 100px;
+    flex: 1;
+    padding: 0 15px;
     color: white;
     min-width: 300px;
 }
-
+.enquiry-content{
+    margin-right: 25%;
+}
 .inquiry-label {
     color: #3273dc;
     font-size: 18px;
@@ -31,7 +39,8 @@
 }
 
 .enquiry-left h2 {
-    margin-bottom: 25px;
+    
+    margin: 0;
     font-size: 40px;
     line-height: 55px;
 }
@@ -43,8 +52,8 @@
 .enquiry-description {
     color: #fff;
     font-size: 16px;
+    font-family: "Manrope", sans-serif;
     line-height: 30px;
-    width:400px;
 }
 
 .contact-block {
@@ -89,6 +98,7 @@
 /* Right Side Form */
 .enquiry-right {
     flex: 1;
+    padding: 0 15px;
     min-width: 340px;
     display: flex;
     justify-content: center;
@@ -171,25 +181,50 @@
 }
 
 @media (max-width: 768px) {
+    .enquiry-section{
+        padding: 80px 0;
+    }
     .enquiry-container {
         flex-direction: column;
-        padding: 40px 20px;
+        padding: 0px 0px;
         gap:40px;
     }
+        .enquiry-tf-container{
+  width: auto;
+        }
+
         .enquiry-left{
-            margin-left: 0px;
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+        }
+        .enquiry-right{
+            /* width: 100%; */
+            min-width: 0;
+        }
+        .enquiry-content{
+            margin-right: 0;
         }
         .enquiry-description{
             margin-right: 30px;
             width:310px;
         }
     .enquiry-left h2 {
-        font-size: 28px;
+        font-size: 36px;
+        line-height: 45px;
     }
+        .contact-item {
+            gap:0px
+        }
     .form-card{
-        margin-right: 40px;
+                background: #f4ede7;
+                border-radius: 5px;
+                max-width: 500px;
         padding: 1px 10px;
     }
+        .enquiry-button{
+            padding-bottom: 20px;
+        }
         .enquiry-form button{
             width: 80%;
         }

@@ -8,16 +8,20 @@ const CTASection = () => {
       {/* Left Section */}
       <div className="ctaB-left">
         <div className="ctaB-left-content">
-          <FaComments size={28} className="ctaB-icon" />
-          <p>
-            Let’s{" "}
-            <strong>
-              <i>
-                <u>Discuss & Start</u>
-              </i>
-            </strong>{" "}
-            IT Consultations
-          </p>
+          <div>
+            <FaComments size={28} className="ctaB-icon" />
+          </div>
+          <div>
+            <p>
+              Let’s{" "}
+              <strong>
+                <i>
+                  <u>Discuss & Start</u>
+                </i>
+              </strong>{" "}
+              IT Consultations
+            </p>
+          </div>
         </div>
         <div className="ctaB-link">
           <a href="#contact">

@@ -19,7 +19,7 @@ const services = [
     slug: "web-development",
     title: "Website Design & Development",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Fortunately, we have a capable, veteran and innovative web development and designing team",
   },
   {
     id: 2,
