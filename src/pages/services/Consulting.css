@@ -14,7 +14,6 @@
 
 .hero-image img {
     max-width: 1000px;
-    border-radius: 5px;
 }
 
 .hero-title {
@@ -70,8 +69,8 @@
 
 
 .service-highlights {
-    padding: 10px 20px;
-    text-align: left !important;
+    padding: 10px 0px;
+    text-align: left;
     
 }
 .service-highlights h2,h3{
@@ -157,7 +156,6 @@
 .tools-image img {
     width: 350px;
     max-width: 100%;
-    border-radius: 4px;
     object-fit: cover;
     height: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -206,7 +204,6 @@
         }
         .hero-image img {
             width: 100%;
-            border-radius: 5px;
         }
         .detailed-services ul{
 padding-left: 10px;
