@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import About from "../pages/About";
-import Contact from "../pages/Contact";
+import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
 import Consulting from "../pages/services/Consulting";
 import WebDev from "../pages/services/WebDev";
 import WebDevApp from "../pages/services/webDevApp";
@@ -21,8 +21,8 @@ export default function AllRoutes() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about-company" element={<About />} />
-        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/about-company" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/services">
           <Route path="consulting" element={<Consulting />} />
           <Route path="web-development" element={<WebDev />} />

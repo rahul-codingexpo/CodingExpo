@@ -5,7 +5,7 @@
     min-height: 600px;
 }
 
-.tf-container {
+.partner-tf-container {
     max-width: 1521px;
     padding: 0 15px;
     width: 100%;
@@ -197,7 +197,7 @@
         padding: 0px 45px;
         }
     
-        .tf-container {
+        .partner-tf-container {
             padding: 0 10px;
         }
     .icon-box {

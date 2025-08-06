@@ -60,7 +60,7 @@ const InfoBox = ({ icon, title, description }) => {
 const PartnersSection = () => {
   return (
     <section className="section-partner bg-1">
-      <div className="tf-container">
+      <div className="partner-tf-container">
         {/* Logo Slider */}
         <div className="row mb-5">
           <div className="col-lg-12">
