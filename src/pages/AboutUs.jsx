@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./AboutUs.css";
 import AboutImg from "../assets/about1_img.jpg";
 import { FiCheck } from "react-icons/fi";
@@ -16,7 +16,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import VideoAbout from "../assets/video-about.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css/free-mode";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -34,25 +34,25 @@ import Google from "../assets/partnerAboutLogo/google.png";
 const testimonials = [
   {
     img: reviewer1,
-    text: "I recently hired Navika Digital to revamp my website and am thrilled with the results I recently hired Navika Digital to revamp my website and am thrilled with the results I recently hired Navika Digital to revamp my website and am......",
+    text: "I recently hired Coding Expo to revamp my website and am thrilled with the results I recently hired Coding Expo to revamp my website and am thrilled with the results I recently hired Coding Expo to revamp my website and am......",
     name: "Zubair Ahmad",
     role: "",
   },
   {
     img: reviewer2,
-    text: "Navika Digital is a great company to work with. I use them for much more than just building a website...",
+    text: "Coding Expo is a great company to work with. I use them for much more than just building a website...",
     name: "Sundaram Prakash J. Hare",
     role: "CEO (Out Thought Taxation)",
   },
   {
     img: reviewer3,
-    text: "As a small business owner, I was intimidated by branding and promoting online. Navika Digital made it easy...",
+    text: "As a small business owner, I was intimidated by branding and promoting online. Coding Expo made it easy...",
     name: "Tayo",
     role: "",
   },
   {
     img: reviewer4,
-    text: "I recently hired Navika Digital to revamp my website and am happy with the results...",
+    text: "I recently hired Coding Expo to revamp my website and am happy with the results...",
     name: "Lusia Oates",
     role: "Founder (Net Capital)",
   },
@@ -64,6 +64,7 @@ const testimonials = [
   },
 ];
 const logos = [Facebook, Google, Codeable, Goodfirms, Clutch];
+
 const AboutUs = () => {
   const { ref: aboutRef, inView: aboutInView } = useInView({
     triggerOnce: true,
@@ -74,6 +75,24 @@ const AboutUs = () => {
     triggerOnce: true,
     threshold: 0.6,
   });
+
+  const [current, setCurrent] = useState(0);
+  const total = testimonials.length;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % total);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [total]);
+
+  const getSlideClass = (index) => {
+    if (index === current) return "active";
+    if (index === (current - 1 + total) % total) return "prev";
+    if (index === (current + 1) % total) return "next";
+    return "inactive";
+  };
+
   return (
     <div>
       {/* Breadcrumb Section */}
@@ -99,7 +118,7 @@ const AboutUs = () => {
                 <span className="sub-title texts-blue font-man">About Us</span>
                 <h2 className="title">
                   Adopt Modernized Designing, and Marketing Approach with
-                  <span className="texts-blue"> Navika Digital</span>
+                  <span className="texts-blue"> Coding Expo</span>
                 </h2>
               </div>
               <ul className="icon-listing">
@@ -141,7 +160,7 @@ const AboutUs = () => {
                 in India
               </h3>
               <p className="des">
-                Navika Digital has been functioning as a frontrunning
+                Coding Expo has been functioning as a frontrunning
                 <b>
                   Web Development, Mobile App Development and Digital Marketing
                   Company.
@@ -238,8 +257,8 @@ const AboutUs = () => {
                 <a href="#">Ownership</a>
               </h2>
               <p className="des">
-                Navika Digital is a firm that has a dare to take the ownership
-                of every project and provide the digital marketing and web
+                Coding Expo is a firm that has a dare to take the ownership of
+                every project and provide the digital marketing and web
                 solutions that client has demanded from us.
               </p>
             </div>
@@ -311,7 +330,7 @@ const AboutUs = () => {
               <h2 className="funfacts-title">
                 Behind the Scenes <br />
                 Surprising Fun Facts <br />
-                About Navika Digital
+                About Coding Expo
               </h2>
             </div>
 
@@ -379,42 +398,37 @@ const AboutUs = () => {
             </h2>
           </div>
 
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
-            spaceBetween={50}
-            loop={true}
-            speed={2000}
-            slidesPerView={1}
-          >
+          <div className="testimonial-slider-wrapper">
             {testimonials.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="about-testimonial-card">
-                  <div className="about-testimonial-image">
-                    <img src={item.img} alt={item.name} />
-                  </div>
-                  <div className="about-testimonial-content">
-                    <p className="about-testimonial-text">{item.text}</p>
-                    <div className="about-testimonial-bottom">
-                      <p className="about-testimonial-name">
-                        {item.name}
-                        {item.role && (
-                          <>
-                            <span>/</span>
-                            <span className="about-testimonial-role">
-                              {item.role}
-                            </span>
-                          </>
-                        )}
-                      </p>
-                      <div className="about-testimonial-stars">★★★★★</div>
-                    </div>
+              <div
+                className={`about-testimonial-card testimonial-slide ${getSlideClass(
+                  index
+                )}`}
+                key={index}
+              >
+                <div className="about-testimonial-image">
+                  <img src={item.img} alt={item.name} />
+                </div>
+                <div className="about-testimonial-content">
+                  <p className="about-testimonial-text">{item.text}</p>
+                  <div className="about-testimonial-bottom">
+                    <p className="about-testimonial-name">
+                      {item.name}
+                      {item.role && (
+                        <>
+                          <span>/</span>
+                          <span className="about-testimonial-role">
+                            {item.role}
+                          </span>
+                        </>
+                      )}
+                    </p>
+                    <div className="about-testimonial-stars">★★★★★</div>
                   </div>
                 </div>
-              </SwiperSlide>
+              </div>
             ))}
-          </Swiper>
+          </div>
         </div>
       </section>
       <section className="partners-section">

@@ -7,14 +7,14 @@ import {
   RiLinkedinFill,
   RiInstagramLine,
 } from "react-icons/ri";
-import logo from "../assets/codingexpo_logo.png";
+import logo from "../assets/codingexpo.png";
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         {/* Company Info */}
         <div className="footer-section company-info">
-          <img src={logo} alt="Navika Digital Logo" className="logo" />
+          <img src={logo} alt="coding expo Logo" className="logo" />
           <p>
             CodingExpo is an established digital marketing, web development and
             mobile app development company. We have capable, proficient and

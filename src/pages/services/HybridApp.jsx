@@ -79,7 +79,7 @@ const Consulting = () => {
         </div>
         <p className="hero-desc">
           Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Navika Digital has curated
+          in web solutions and the digital arena, Coding Expo has curated
           scalable and profitable services for all sorts of businesses. As an
           accountable digital marketing company, we evaluate customers’
           behavior, buying patterns, intended audience and essential insights.

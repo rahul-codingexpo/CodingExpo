@@ -14,7 +14,7 @@ import {
 
 const testimonials = [
   {
-    text: "I must confess that Navika Digital is an excellent company with which to collaborate. I hired them to create my e-commerce website, and they have done a commendable job. They provided me with the website before the deadline",
+    text: "I must confess that Coding Expo is an excellent company with which to collaborate. I hired them to create my e-commerce website, and they have done a commendable job. They provided me with the website before the deadline",
     name: "Sundaram Prakash",
     title: "CEO (Out Thought Taxation)",
     rating: 4.9,
@@ -22,7 +22,7 @@ const testimonials = [
     image: "https://i.pravatar.cc/100?img=1",
   },
   {
-    text: "I was planning to set up my startup business, and I was in search of a team that could develop a robust, innovative and magnificent mobile app for my business. Surprisingly Navika Digital helped me to get potential leads and queries coming from my app.",
+    text: "I was planning to set up my startup business, and I was in search of a team that could develop a robust, innovative and magnificent mobile app for my business. Surprisingly Coding Expo helped me to get potential leads and queries coming from my app.",
     name: "Tayo",
     title: "",
     rating: 4.9,
@@ -30,7 +30,7 @@ const testimonials = [
     image: "https://i.pravatar.cc/100?img=2",
   },
   {
-    text: "Being a business owner, I have to look after all the operations of my businesses. I have been fortunate enough to hire Navika Digital for digital marketing. I am delighted with their work, and they have helped my business grow.",
+    text: "Being a business owner, I have to look after all the operations of my businesses. I have been fortunate enough to hire Coding Expo for digital marketing. I am delighted with their work, and they have helped my business grow.",
     name: "Lusia Oates",
     title: "Founder (Net Capital)",
     rating: 4.9,
@@ -38,7 +38,7 @@ const testimonials = [
     image: "https://i.pravatar.cc/100?img=3",
   },
   {
-    text: "I must confess that Navika Digital is an excellent company with which to collaborate. I hired them to create my e-commerce website, and they have done a commendable job. They provided me with the website before the deadline",
+    text: "I must confess that Coding Expo is an excellent company with which to collaborate. I hired them to create my e-commerce website, and they have done a commendable job. They provided me with the website before the deadline",
     name: "Sundaram Prakash",
     title: "CEO (Out Thought Taxation)",
     rating: 4.9,
@@ -46,7 +46,7 @@ const testimonials = [
     image: "https://i.pravatar.cc/100?img=1",
   },
   {
-    text: "I was planning to set up my startup business, and I was in search of a team that could develop a robust, innovative and magnificent mobile app for my business. Surprisingly Navika Digital helped me to get potential leads and queries coming from my app.",
+    text: "I was planning to set up my startup business, and I was in search of a team that could develop a robust, innovative and magnificent mobile app for my business. Surprisingly Coding Expo helped me to get potential leads and queries coming from my app.",
     name: "Tayo",
     title: "",
     rating: 4.9,
@@ -54,7 +54,7 @@ const testimonials = [
     image: "https://i.pravatar.cc/100?img=2",
   },
   {
-    text: "Being a business owner, I have to look after all the operations of my businesses. I have been fortunate enough to hire Navika Digital for digital marketing. I am delighted with their work, and they have helped my business grow.",
+    text: "Being a business owner, I have to look after all the operations of my businesses. I have been fortunate enough to hire Coding Expo for digital marketing. I am delighted with their work, and they have helped my business grow.",
     name: "Lusia Oates",
     title: "Founder (Net Capital)",
     rating: 4.9,

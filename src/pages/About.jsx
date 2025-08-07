@@ -25,7 +25,7 @@ const About = () => {
       <div className="about-container">
         {/* Image on Left */}
         <div className="about-image">
-          <img src={TeamImage} ref={imgRef} alt="Navika Digital Team" />
+          <img src={TeamImage} ref={imgRef} alt="Coding Expo Team" />
         </div>
 
         {/* Text Content on Right */}
@@ -34,13 +34,13 @@ const About = () => {
           <h2 className="about-title">
             Adopt Modernized Designing, <br />
             and Marketing Approach with <br />
-            Navika Digital
+            Coding Expo
           </h2>
           <h4 className="about-highlight">
             Result-Driven Web Design, and Development Company in India
           </h4>
           <p className="about-description">
-            Navika Digital has been functioning as a frontrunning{" "}
+            Coding Expo has been functioning as a frontrunning{" "}
             <strong>Web Development, Mobile App Development</strong> and{" "}
             <strong>Digital Marketing Company</strong>. We take every project as
             an urgent task and complete it with all necessary devotion and
