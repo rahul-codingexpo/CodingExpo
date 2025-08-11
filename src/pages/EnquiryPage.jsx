@@ -1,8 +1,14 @@
 import React from "react";
 import "./EnquiryPage.css";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-
+import useScrollAnimation from "../components/ScrollAnimation";
+import "../components/Animations.css";
 const EnquirySection = () => {
+  const labelRef = useScrollAnimation();
+  const h2Ref = useScrollAnimation();
+  const desRef = useScrollAnimation();
+  const callRef = useScrollAnimation();
+  const emailRef = useScrollAnimation();
   return (
     <section className="enquiry-section">
       <div className="enquiry-tf-container">
@@ -10,16 +16,20 @@ const EnquirySection = () => {
           {/* Left Side */}
           <div className="enquiry-left">
             <div className="enquiry-content">
-              <p className="inquiry-label">Work Inquiry</p>
-              <h2>Collaborate with us to Promote your Business Digitally</h2>
-              <p className="enquiry-description">
+              <p className="inquiry-label fade-in-up" ref={labelRef}>
+                Work Inquiry
+              </p>
+              <h2 className="fade-in-up" ref={h2Ref}>
+                Collaborate with us to Promote your Business Digitally
+              </h2>
+              <p className="enquiry-description fade-in-up" ref={desRef}>
                 As a responsible, capable, veteran, devoted and outcome driven
                 IT company, CodingExpo has proved itself every time. We are
                 ready to create history in every upcoming moment.
               </p>
 
               <div className="contact-block">
-                <div className="contact-item">
+                <div className="contact-item fade-in-up" ref={callRef}>
                   <FaPhoneAlt className="icon" />
                   <div>
                     <span className="label">Call For Inquiry</span>
@@ -30,7 +40,7 @@ const EnquirySection = () => {
                 </div>
                 <br />
                 <br />
-                <div className="contact-item">
+                <div className="contact-item fade-in-up" ref={emailRef}>
                   <FaEnvelope className="icon" />
                   <div>
                     <span className="label">Send Us Email</span>

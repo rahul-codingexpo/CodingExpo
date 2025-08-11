@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import "./Experience.css";
 import imageRightservice from "../assets/slide2.jpg";
-
+import useScrollAnimation from "../components/ScrollAnimation";
+import "../components/Animations.css";
 const ExperiencePage = () => {
   useEffect(() => {
     const circles = document.querySelectorAll(".progress-circle");
@@ -33,22 +34,27 @@ const ExperiencePage = () => {
     circles.forEach((circle) => observer.observe(circle));
   }, []);
 
+  const subtitleRef = useScrollAnimation();
+  const titleRef = useScrollAnimation();
+  const descriptionRef = useScrollAnimation();
+  const statRef = useScrollAnimation();
+
   return (
     <div className="experience-section">
       <div className="experience-left">
-        <h4 className="experience-subtitle">
+        <h4 className="experience-subtitle fade-in-up" ref={subtitleRef}>
           360-Degree Digital Web Solutions
         </h4>
-        <h2 className="experience-title">
+        <h2 className="experience-title fade-in-up" ref={titleRef}>
           Consider us as your Digital & Web Solution Provider
         </h2>
-        <p className="experience-description">
+        <p className="experience-description fade-in-up" ref={descriptionRef}>
           Backed with some of the vibrant and crazy heads in website development
           and digital solutions has made us the foremost web design, development
           digital marketing firm. Our established work history and success
           client’s portfolio can express our stature in digital arena.
         </p>
-        <div className="experience-stats">
+        <div className="experience-stats fade-in-up" ref={statRef}>
           <div className="stat-box">
             <div className="progress-circle" data-percentage="68">
               <svg>

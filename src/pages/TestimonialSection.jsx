@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import useScrollAnimation from "../components/ScrollAnimation";
+import "../components/Animations.css";
 import {
   FaQuoteLeft,
   FaInstagram,
@@ -70,14 +72,21 @@ const platformIcons = {
 };
 
 const TestimonialPage = () => {
+  const h4Ref = useScrollAnimation();
+  const h2Ref = useScrollAnimation();
+  const testimonialRef = useScrollAnimation();
   return (
     <section className="testimonial-section">
       <div className="testimonial-wrapper">
         <div className="testimonial-header">
-          <h4>Clients Testimonials</h4>
-          <h2>How Our Clients Have Praised Our Business Services</h2>
+          <h4 className="fade-in-up" ref={h4Ref}>
+            Clients Testimonials
+          </h4>
+          <h2 className="fade-in-up" ref={h2Ref}>
+            How Our Clients Have Praised Our Business Services
+          </h2>
         </div>
-        <div className="testimonial-content">
+        <div className="testimonial-content fade-in-up" ref={testimonialRef}>
           <Swiper
             modules={[Autoplay, Pagination]}
             autoplay={{ delay: 2000 }}

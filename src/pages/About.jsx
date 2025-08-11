@@ -1,10 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "./About.css";
 import TeamImage from "../assets/new-team-bg.jpg";
-
+import useScrollAnimation from "../components/ScrollAnimation";
+import "../components/Animations.css";
 const About = () => {
   const imgRef = useRef(null);
-
+  const aboutRef_h = useScrollAnimation();
+  const aboutRef_p = useScrollAnimation();
+  // const contentRef = useScrollAnimation();
   useEffect(() => {
     if (!imgRef.current) return;
     const observer = new IntersectionObserver(
@@ -29,17 +32,17 @@ const About = () => {
         </div>
 
         {/* Text Content on Right */}
-        <div className="about-content">
+        <div className="about-content ">
           <span className="about-subtitle">About Us</span>
           <h2 className="about-title">
             Adopt Modernized Designing, <br />
             and Marketing Approach with <br />
             Coding Expo
           </h2>
-          <h4 className="about-highlight">
+          <h4 className="about-highlight fade-in-up" ref={aboutRef_h}>
             Result-Driven Web Design, and Development Company in India
           </h4>
-          <p className="about-description">
+          <p className="about-description fade-in-up" ref={aboutRef_p}>
             Coding Expo has been functioning as a frontrunning{" "}
             <strong>Web Development, Mobile App Development</strong> and{" "}
             <strong>Digital Marketing Company</strong>. We take every project as

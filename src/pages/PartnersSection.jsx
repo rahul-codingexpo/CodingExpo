@@ -13,7 +13,8 @@ import Google from "../assets/brand_logo/google.png";
 import { GiBullseye } from "react-icons/gi";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { PiHandCoinsDuotone } from "react-icons/pi";
-
+import useScrollAnimation from "../components/ScrollAnimation";
+import "../components/Animations.css";
 const logos = [
   { name: "Codeable", img: Codeable },
   { name: "GoodFirms", img: GoodFirms },
@@ -58,6 +59,7 @@ const InfoBox = ({ icon, title, description }) => {
 };
 
 const PartnersSection = () => {
+  const boxRef = useScrollAnimation();
   return (
     <section className="section-partner bg-1">
       <div className="partner-tf-container">
@@ -106,7 +108,7 @@ const PartnersSection = () => {
         </div>
 
         {/* Info Boxes */}
-        <div className="info-boxes-row">
+        <div className="info-boxes-row fade-in-up" ref={boxRef}>
           <InfoBox
             icon={<GiBullseye />}
             title="Digitized Solutions"

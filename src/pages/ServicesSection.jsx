@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import ChatLogo from "../assets/chat1.png";
 import "./ServicesSection.css";
-
+import useScrollAnimation from "../components/ScrollAnimation";
+import "../components/Animations.css";
 import {
   FaMobileAlt,
   FaPaintBrush,
@@ -59,13 +60,18 @@ const services = [
 ];
 
 const ServicesPage = () => {
+  const headRef = useScrollAnimation();
+  const secRef = useScrollAnimation();
+  const ctaRef = useScrollAnimation();
   return (
     <div className="services-wrapper">
       <div className="services-heading">
         <p className="subheading">Popular Services</p>
-        <h2 className="main-heading">Services We Provide</h2>
+        <h2 className="main-heading fade-in-up" ref={headRef}>
+          Services We Provide
+        </h2>
       </div>
-      <div className="services-grid">
+      <div className="services-grid fade-in-up" ref={secRef}>
         {services.map((service, index) => (
           <div key={index} className="service-card">
             <div className="service-id">0{service.id}</div>
@@ -82,7 +88,7 @@ const ServicesPage = () => {
         ))}
       </div>
 
-      <div className="cta-box">
+      <div className="cta-box fade-in-up" ref={ctaRef}>
         <img src={ChatLogo} alt="chat icon" className="cta-icon" />
         <p>
           Get Free Consultations For Tech Solutions{" "}

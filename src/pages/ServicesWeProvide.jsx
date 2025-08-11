@@ -1,6 +1,7 @@
 import React from "react";
 import "./ServicesWeProvide.css";
-// import { LaptopSvg } from "../components/svg";
+import useScrollAnimation from "../components/ScrollAnimation";
+import "../components/Animations.css";
 import {
   FaLaptopCode,
   FaMobileAlt,
@@ -34,17 +35,22 @@ const services = [
 ];
 
 const ServicesWeProvide = () => {
+  const subtitleRef = useScrollAnimation();
+  const titleRef = useScrollAnimation();
+  const gridRef = useScrollAnimation();
   return (
     <section className="serviceWe-section">
       <div className="servicesWe-container">
         <div className="service-head">
-          <p className="servicesWe-subtitle">What We Provide</p>
-          <h2 className="servicesWeTop-title">
+          <p className="servicesWe-subtitle fade-in-up" ref={subtitleRef}>
+            What We Provide
+          </p>
+          <h2 className="servicesWeTop-title fade-in-up" ref={titleRef}>
             Our Web Development and Digital Services Create Winning Tales
           </h2>
         </div>
 
-        <div className="servicesWe-grid">
+        <div className="servicesWe-grid fade-in-up" ref={gridRef}>
           {services.map((service, index) => (
             <div key={index} className="serviceWe-card">
               <div className="serviceWe-icon">{service.icon}</div>

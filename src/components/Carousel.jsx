@@ -6,6 +6,8 @@ import s2 from "../assets/slide2.jpg";
 import mask from "../assets/mask.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import useScrollAnimation from "./ScrollAnimation";
+import "./Animations.css";
 
 const slides = [
   {
@@ -31,6 +33,9 @@ const slides = [
 ];
 
 export default function HeroCarousel() {
+  const carouselRef = useScrollAnimation();
+  const contentRef = useScrollAnimation();
+
   const settings = {
     dots: true,
     infinite: true,
@@ -47,7 +52,7 @@ export default function HeroCarousel() {
   }, []);
 
   return (
-    <div className="hero-carousel">
+    <div className="hero-carousel fade-in-up" ref={carouselRef}>
       <Slider {...settings}>
         {slides.map((s) => (
           <div className="slide">

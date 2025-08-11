@@ -8,19 +8,32 @@ import {
   RiInstagramLine,
 } from "react-icons/ri";
 import logo from "../assets/codingexpo.png";
+import useScrollAnimation from "./ScrollAnimation";
+import "../components/Animations.css";
 const Footer = () => {
+  const logoRef = useScrollAnimation();
+  const desRef = useScrollAnimation();
+  const followRef = useScrollAnimation();
+  const ItRef = useScrollAnimation();
+  const supportRef = useScrollAnimation();
+  const newsRef = useScrollAnimation();
   return (
     <footer className="footer">
       <div className="footer-container">
         {/* Company Info */}
         <div className="footer-section company-info">
-          <img src={logo} alt="coding expo Logo" className="logo" />
-          <p>
+          <img
+            src={logo}
+            alt="coding expo Logo"
+            className="logo fade-in-up"
+            ref={logoRef}
+          />
+          <p className="fade-in-up" ref={desRef}>
             CodingExpo is an established digital marketing, web development and
             mobile app development company. We have capable, proficient and
             well-versed team members that provides result-driven work.
           </p>
-          <div className="social-icons">
+          <div className="social-icons fade-in-up" ref={followRef}>
             <h4>Follow Us</h4>
             <a href="#">
               <i className="fab fa-facebook-f">
@@ -46,7 +59,7 @@ const Footer = () => {
         </div>
 
         {/* IT Services */}
-        <div className="footer-section">
+        <div className="footer-section fade-in-up" ref={ItRef}>
           <h4>IT Services</h4>
           <ul>
             <li>
@@ -81,7 +94,7 @@ const Footer = () => {
         </div>
 
         {/* Support */}
-        <div className="footer-section">
+        <div className="footer-section fade-in-up" ref={supportRef}>
           <h4>Support & Quicklinks</h4>
           <ul>
             <li>
@@ -96,7 +109,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div className="footer-section newsletter">
+        <div className="footer-section newsletter fade-in-up" ref={newsRef}>
           <h4>Newsletter</h4>
           <p>Subscribe our newsletter to get more updates</p>
           <form>
