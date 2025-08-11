@@ -456,8 +456,8 @@ const AboutUs = () => {
           >
             {logos.concat(logos).map((logo, index) => (
               <SwiperSlide key={`top-${index}`}>
-                <div className="partner-card">
-                  <img src={logo} alt="Partner Logo" />
+                <div className="about-partner-card">
+                  <img src={logo} alt="about-Partner Logo" />
                 </div>
               </SwiperSlide>
             ))}
@@ -478,8 +478,8 @@ const AboutUs = () => {
           >
             {logos.concat(logos).map((logo, index) => (
               <SwiperSlide key={`bottom-${index}`}>
-                <div className="partner-card">
-                  <img src={logo} alt="Partner Logo" />
+                <div className="about-partner-card">
+                  <img src={logo} alt="about-Partner Logo" />
                 </div>
               </SwiperSlide>
             ))}
