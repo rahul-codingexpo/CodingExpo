@@ -4,6 +4,12 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
 import TechImage from "../../assets/technology1.jpg";
 import LiImage from "../../assets/new-img1.png";
+import figma1 from "../../assets/Tools/figma.avif";
+import photoshop1 from "../../assets/Tools/photoshop.png";
+import illustrator1 from "../../assets/Tools/illustrator.png";
+import coral1 from "../../assets/Tools/corel-draw.jpeg";
+import canva1 from "../../assets/Tools/canva.png";
+import indesign1 from "../../assets/Tools/indesign.png";
 import {
   FaMobileAlt,
   FaPaintBrush,
@@ -16,45 +22,39 @@ import {
 const services = [
   {
     id: 1,
-    slug: "web-development",
-    title: "Website Design & Development",
+    title: "UX Audit",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our expert UI/UX designer conducts an in-depth analysis of your website or digital product and drafts an inclusive UX audit report. Such insights help in creating excellent UX/UI designs.",
   },
   {
     id: 2,
-    slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Wireframing & Prototyping",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our Prototyping and wireframing practices focus on presenting fundamental design, interactive design & highly trusted project models.",
   },
   {
     id: 3,
-    slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "Web app UI UX Design",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Coding Expo presents UI UX design for web applications so that these apps deliver the outcomes that the customers expect.",
   },
   {
     id: 4,
-    slug: "seo",
-    title: "SEO Services",
+    title: "Mobile App UI UX Design",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "The success of a mobile app depends on its user interface and user experience. That is why we focus on and work on robust mobile app UI UX design.",
   },
   {
     id: 5,
-    slug: "social-media-management",
-    title: "SMM Services",
+    title: "UI UX Design Consulting",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Apart from creating seamless designs, our UX and UI designers give their valuable feedback and consultancy for the welfare of digital products and web and mobile apps.",
   },
   {
     id: 6,
-    slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "UX Testing",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "After creating intuitive and user-centric UX designs for websites and apps, we conduct UX testing to ensure that the design is interactive.",
   },
 ];
 
@@ -69,119 +69,99 @@ const UIUX = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
-              <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
-              </span>
-              Consulting Services{" "}
+              <span className="blue">UI UX Design Services</span>
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          With respect to the honor of becoming a rapidly elevating UI UX design
+          company, Coding Expo has woven visually fantastic and functionally
+          robust web solutions along with nurturing clients' demands. We have a
+          myriad of UI/UX design solutions and groundbreaking competence, which
+          allow us to present interactive and visually sound designs for
+          websites and other digital products. A website and digital product
+          that provides easy navigation, appealing look, and aesthetic elements
+          in the design are under user interface (UI) and user experience design
+          (UX). Often, people are confused by both these terms and consider them
+          to be the same, but actually, they are different from each other.
+          Though both have a single objective, which is to deliver a unified and
+          interactive experience to the users, both UI and UX designs are
+          separate from each other.
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
         <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
+          How Navika Digital is Unique and Better from Other UI/UX Design
+          Companies
         </h2>
         <ul>
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Data-Backed Inputs:</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We study data related to the product and present it to the
+                client. We gather information on the basis of performance
+                indicators and convert data into practical intuitions. The
+                benefit of a data-backed decision is that we easily understand
+                the accurate direction to go. Surpassing competitors and
+                boosting profitability becomes flawless when we adopt
+                data-driven inputs.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>Matching User's Aspirations:</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                It is the biggest challenge to search for the correct emotions
+                and words showcased in the project for users. You may end up
+                creating a blunder if you cannot represent the features and
+                interactions that the user doesn't understand. The user's
+                emotion mapping tools are helpful to monitor and find selling
+                and shopping behavior. Our UX designer implements such
+                applications and makes certain that all good happens to the
+                final product.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>User-Focused:</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                The objective of UI and UX design services is to pay attention
+                to the user's perspective and aspirations. Once we understand
+                the needs of users, we will take actions to make the project
+                fruitful. Our UI? UX design solutions always concentrate on
+                developing enhanced ROI for the consumers and improving user
+                engagement. We cope with business motives with design
+                components. We adopt interactive features to create flexible and
+                forward-thinking designs.
               </div>
             </p>
           </li>
           <li>
-            <h4>Optimizing Emails</h4>
+            <h4>Building Spectacular UI/UX Designs:</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
-              </div>
-            </p>
-          </li>
-          <li>
-            <h4>Mobile App Development Consulting</h4>
-            <p>
-              <div className="p-img">
-                <img src={LiImage} alt="css-image" />
-              </div>
-              <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Building Spectacular UI/UX Designs: Our interactive UI and UX
+                designs complement the expectations of different businesses. We
+                blend technology, creativity and commercial aspects of business
+                altogether. Our designs have tactically benefitted from making
+                extensive & user-friendly interfaces.
               </div>
             </p>
           </li>
@@ -192,10 +172,6 @@ const UIUX = () => {
       <section className="service-highlights">
         <h3>Our Services</h3>
         <h2>Determine the Potent</h2>
-        <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
-        </p>
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-card">
@@ -240,45 +216,27 @@ const UIUX = () => {
           </div>
           <div className="tools-grid">
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Figma"
-              />
+              <img src={figma1} alt="Figma" />
               <p>Figma</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Photoshop"
-              />
+              <img src={photoshop1} alt="Photoshop" />
               <p>PhotoShop</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="Illustrator"
-              />
+              <img src={illustrator1} alt="Illustrator" />
               <p>Illustrator</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Corel Draw"
-              />
+              <img src={coral1} alt="Corel Draw" />
               <p>Corel Draw</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Canva"
-              />
+              <img src={canva1} alt="Canva" />
               <p>Canva</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="InDesign"
-              />
+              <img src={indesign1} alt="InDesign" />
               <p>InDesign</p>
             </div>
           </div>

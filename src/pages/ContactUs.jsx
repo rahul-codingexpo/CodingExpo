@@ -57,8 +57,7 @@ function ContactUs() {
                 </div>
                 <div className="content">
                   <h4>Phone</h4>
-                  <p>+91 9315865976</p>
-                  <p>+91 7766957363</p>
+                  <p>+91 9643054453</p>
                 </div>
               </div>
 
@@ -94,14 +93,14 @@ function ContactUs() {
                       <FaTwitter />
                     </a>
                     <a
-                      href="https://www.linkedin.com/company/codingexpo/"
+                      href="https://www.linkedin.com/company/codingexpo-technology-private-limited/"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <FaLinkedinIn />
                     </a>
                     <a
-                      href="https://www.instagram.com/codingexpo/"
+                      href="https://www.instagram.com/coding.expo/"
                       target="_blank"
                       rel="noreferrer"
                     >

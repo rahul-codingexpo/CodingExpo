@@ -4,6 +4,12 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
 import TechImage from "../../assets/technology1.jpg";
 import LiImage from "../../assets/new-img1.png";
+import react1 from "../../assets/Tools/react1.png";
+import angular1 from "../../assets/Tools/angular2.png";
+import postgre1 from "../../assets/Tools/postgreSql.png";
+import python1 from "../../assets/Tools/python-img.jpeg";
+import mongo1 from "../../assets/Tools/mongodb-img.png";
+import node1 from "../../assets/Tools/nodeJs.png";
 import {
   FaMobileAlt,
   FaPaintBrush,
@@ -16,45 +22,39 @@ import {
 const services = [
   {
     id: 1,
-    slug: "web-development",
-    title: "Website Design & Development",
+    title: "Web Portals",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our web application team crafts bespoke web portals that deliver streamlined accessibility to important details and practices, enhance business, and improve customer experience.",
   },
   {
     id: 2,
-    slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Analytic Web Apps",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our analytic web apps are useful for providing supportive features for risk management, big data analysis, business intelligence, customer acquisition, and many more.",
   },
   {
     id: 3,
-    slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "Supply Chain Management Apps",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our supply chain management web apps are useful for businesses to handle inventory, channelize logistics and smooth other business operations.",
   },
   {
     id: 4,
-    slug: "seo",
-    title: "SEO Services",
+    title: "Enterprises Web Apps",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We create the most updated and expandable enterprise web apps that enhance efficiency and support flawless interaction.",
   },
   {
     id: 5,
-    slug: "social-media-management",
-    title: "SMM Services",
+    title: "Online Web Services",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We have already developed a range of online web services, including XaaS, SaaS, IaaS and PaaS, that deliver agile solutions for organizations.",
   },
   {
     id: 6,
-    slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "Customer-Facing Apps",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We have crafted interactive and robust customer-facing web apps that accelerate customer communication, channelize services and boos user’s contentment.",
   },
 ];
 
@@ -69,119 +69,123 @@ const Consulting = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
               <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
+                Trusted Web Application Development Services{" "}
               </span>
-              Consulting Services{" "}
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          Coding Expo has achieved perfection in creating web applications and
+          software for different business niches. People and businesses have
+          trusted us for scalable web application development services. As an
+          extremely trusted web application development company, we craft web
+          applications that resonate with modern business requirements. Invest
+          in authentic web programming expertise, flexible project management
+          structure and secure development framework with Coding Expo. Our web
+          application developers are qualified enough to design web portals,
+          customer-facing applications, enterprise web apps, supply chain
+          management apps, ecommerce web apps and more.
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
-        <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
-        </h2>
+        <h2>Why Pick Navika Digital As your Web App Development Company</h2>
         <ul>
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Evolving development actions:</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                With respect to web app development services, we make certain to
+                present safe and maintainable projects through agile web-based
+                application development. We begin with a first-time discussion
+                and complete it to accomplish the end project. Our intuitive
+                focus on detailing and devotion to brilliance in the program has
+                become indomitable. Taking honor of a web application
+                development firm, our wise creators blend contemporary
+                techniques with aesthetic design to provide web apps that
+                surpass the customer’s hopes.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>On-time project accomplishment and delivery:</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We have a set history of accomplishing projects before and
+                within the deadline. Our intelligent web application masters
+                operate things wisely to match with your time frame and targets.
+                We ensure the readiness and testing authenticity of web apps
+                before they go live for the public domain.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>Continuous and clear interaction:</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We sustain honest, clear and consistent interaction with our
+                clients. We keep them informed about the progress and current
+                happenings in their project so that they can keep monitoring our
+                work. We also recommend any inputs if they want. Our web
+                application professionals keep you in the loop in every phase of
+                creation.
               </div>
             </p>
           </li>
           <li>
-            <h4>Optimizing Emails</h4>
+            <h4>Advanced framework usage</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Our experience has exceeded a decade, and we have developed web
+                apps for various industries and businesses, including ecommerce,
+                B2B, B2C, travel, healthcare, online education, finance and many
+                more. Our web application squad has fruitfully completed and
+                delivered projects to more than 500 clients. We use technologies
+                including Node.js, React.Js, MongoDB, Vue.js, Python etc.
               </div>
             </p>
           </li>
           <li>
-            <h4>Mobile App Development Consulting</h4>
+            <h4>Robust and fast accessing front end for web apps:</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Your web apps need to have quick loading time, great user
+                experience, and up-to-date UI/UX design to stand ahead of your
+                rivals. We make certain that your business performs excellently
+                and sets you apart from others through our flourishing web apps.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Eliminate Web Obstacles with Veteran Consultants:</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                many companies can develop web apps, but few can build
+                technically strong, secure, standardized, universally acclaimed
+                web apps, and Navika Digital is one of them. Our crew crafts web
+                apps that synchronize technology with your business to make it
+                accessible, easy to use and acceptable among your potential
+                users.
               </div>
             </p>
           </li>
@@ -191,10 +195,7 @@ const Consulting = () => {
       {/* Service Highlights */}
       <section className="service-highlights">
         <h2>Determine the Potent</h2>
-        <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
-        </p>
+        <p className="subheading">Types of Web Apps We Deliver</p>
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-card">
@@ -215,20 +216,14 @@ const Consulting = () => {
       </section>
       <section className="uiux-tools-section">
         <div className="tools-heading">
-          <h2>Tools We Use in UI/UX design</h2>
+          <h2>
+            What Technologies We Use in Developing Fantastic Web Applications
+          </h2>
           <p>
-            UX design applies to both physical and digital services/products. It
-            helps in creating framework design solutions for obstacles that
-            users meet while using the product or website. It focuses on
-            improving the complete user experience from the beginning to the
-            final phase. The objective of UX design is to deliver a product that
-            makes users contented because of their efficiency. While UI design
-            applies only to digital services and products. User interface design
-            distillates visual aspects that enable users to align with the
-            product. UI involves in making a blend of images, animation, colors,
-            typography etc. User Interface design (UI) aims to customize a
-            product that provides creative and visual satisfaction to users. We
-            use software for UI/UX designs:
+            Coding Expo, an extremely appreciated custom web application
+            development agency in India, prepares industry-centric web apps and
+            delivers holistic functionality. Our web applications are secure,
+            encrypted and backed with high-safety features.
           </p>
         </div>
 
@@ -238,46 +233,28 @@ const Consulting = () => {
           </div>
           <div className="tools-grid">
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Figma"
-              />
-              <p>Figma</p>
+              <img src={react1} alt="react" />
+              <p>React</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Photoshop"
-              />
-              <p>PhotoShop</p>
+              <img src={angular1} alt="angular" />
+              <p>Angular</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="Illustrator"
-              />
-              <p>Illustrator</p>
+              <img src={postgre1} alt="postgre" />
+              <p>PostgreSQL</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Corel Draw"
-              />
-              <p>Corel Draw</p>
+              <img src={node1} alt="node" />
+              <p>Node.js</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Canva"
-              />
-              <p>Canva</p>
+              <img src={mongo1} alt="mongodb" />
+              <p>MongoDB</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="InDesign"
-              />
-              <p>InDesign</p>
+              <img src={python1} alt="python" />
+              <p>Python</p>
             </div>
           </div>
         </div>

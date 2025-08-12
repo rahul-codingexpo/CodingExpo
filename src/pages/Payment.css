@@ -1,0 +1,156 @@
+.breadcumb-section {
+    padding: 157px 0 161px;
+    background: url(../assets/AbotUsBg.jpg) center/cover fixed no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.breadcumb-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(2, 6, 38, 0.85), rgba(2, 6, 38, 0.4));
+}
+
+.payment-tf-container {
+    position: relative;
+    z-index: 2;
+}
+
+.title-inner h1 {
+    font-size: 65px;
+    z-index: 2;
+    color: white;
+    margin: 0 0 17px 0;
+}
+
+.title-group {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+
+.title-group a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.payment-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+}
+
+/* QR Card */
+.qr-card {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    flex: 1 1 45%;
+    min-width: 300px;
+}
+
+.company-name {
+    font-size: 20px;
+    margin-bottom: 4px;
+    color: #424242;
+    padding: 10px;
+}
+
+.phone-number {
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.qr-image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.upi-id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.copy-btn img {
+    width: 25px;
+}
+
+.bhim-upi img {
+    height: 30px;
+}
+
+.note {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Payment Options */
+.payment-options {
+    flex: 1 1 45%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.razorpay-card,
+.paypal-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background: #fff;
+}
+
+.razorpay-logo,
+.paypal-logo {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.paypal-btn {
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.paypal-cards {
+    margin-top: 8px;
+}
+
+/* Mobile Stack */
+@media (max-width: 768px) {
+    .payment-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qr-card,
+    .payment-options {
+        flex: 1 1 100%;
+        max-width: 500px;
+    }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import {
   RiFacebookFill,
@@ -35,22 +36,25 @@ const Footer = () => {
           </p>
           <div className="social-icons fade-in-up" ref={followRef}>
             <h4>Follow Us</h4>
-            <a href="#">
+            <a href="https://www.facebook.com/coding.expo/" target="_">
               <i className="fab fa-facebook-f">
                 <RiFacebookFill />
               </i>
             </a>
-            <a href="#">
+            <a href="https://x.com/codingexpo" target="_">
               <i className="fab fa-twitter">
                 <RiTwitterFill />
               </i>
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/codingexpo-technology-private-limited/"
+              target="_"
+            >
               <i className="fab fa-linkedin-in">
                 <RiLinkedinFill />
               </i>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/coding.expo/" target="_">
               <i className="fab fa-instagram">
                 <RiInstagramLine />
               </i>
@@ -63,32 +67,46 @@ const Footer = () => {
           <h4>IT Services</h4>
           <ul>
             <li>
-              <MdOutlineNavigateNext />
-              Website Designing
+              <Link to="/services/web-development">
+                <MdOutlineNavigateNext />
+                Website Designing
+              </Link>
             </li>
             <li>
-              <MdOutlineNavigateNext />
-              Website Development
+              <Link to="/services/web-app-development">
+                <MdOutlineNavigateNext />
+                Website Development
+              </Link>
             </li>
             <li>
-              <MdOutlineNavigateNext />
-              Mobile App Development
+              <Link to="/services/android-app-development">
+                <MdOutlineNavigateNext />
+                Mobile App Development
+              </Link>
             </li>
             <li>
-              <MdOutlineNavigateNext />
-              E-Commerce development
+              <Link to="/services/eCommerce-app-development">
+                <MdOutlineNavigateNext />
+                E-Commerce development
+              </Link>
             </li>
             <li>
-              <MdOutlineNavigateNext />
-              SEO Services
+              <Link to="/services/seo">
+                <MdOutlineNavigateNext />
+                SEO Services
+              </Link>
             </li>
             <li>
-              <MdOutlineNavigateNext />
-              SMM Services
+              <Link to="/services/social-media-management">
+                <MdOutlineNavigateNext />
+                SMM Services
+              </Link>
             </li>
             <li>
-              <MdOutlineNavigateNext />
-              PPC Services
+              <Link to="/services/pay-per-click-services">
+                <MdOutlineNavigateNext />
+                PPC Services
+              </Link>
             </li>
           </ul>
         </div>
@@ -98,12 +116,16 @@ const Footer = () => {
           <h4>Support & Quicklinks</h4>
           <ul>
             <li>
-              <MdOutlineNavigateNext />
-              Contact Us
+              <Link to="/contact-us">
+                <MdOutlineNavigateNext />
+                Contact Us
+              </Link>
             </li>
             <li>
-              <MdOutlineNavigateNext />
-              Payment
+              <Link to="/payment">
+                <MdOutlineNavigateNext />
+                Payment
+              </Link>
             </li>
           </ul>
         </div>

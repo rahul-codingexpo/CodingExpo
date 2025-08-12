@@ -1,7 +1,10 @@
 import React from "react";
 import "./CTASection.css";
+import { Link } from "react-router-dom";
 import { FaComments, FaChevronRight } from "react-icons/fa";
-
+import Avt1 from "../assets/ctaAvtar/avt1.jpg";
+import Avt2 from "../assets/ctaAvtar/avt2.jpg";
+import Avt3 from "../assets/ctaAvtar/avt3.jpg";
 const CTASection = () => {
   return (
     <div className="ctaB-wrapper">
@@ -24,27 +27,18 @@ const CTASection = () => {
           </div>
         </div>
         <div className="ctaB-link">
-          <a href="#contact">
+          <Link to="/contact-us">
             Let’s Talk <FaChevronRight size={12} />
-          </a>
+          </Link>
         </div>
       </div>
 
       {/* Right Section */}
       <div className="ctaB-right">
         <div className="ctaB-avatars">
-          <img
-            src="https://randomuser.me/api/portraits/women/1.jpg"
-            alt="user1"
-          />
-          <img
-            src="https://randomuser.me/api/portraits/men/2.jpg"
-            alt="user2"
-          />
-          <img
-            src="https://randomuser.me/api/portraits/men/3.jpg"
-            alt="user3"
-          />
+          <img src={Avt1} alt="user1" />
+          <img src={Avt2} alt="user2" />
+          <img src={Avt3} alt="user3" />
           <div className="ctaB-plus">+</div>
         </div>
         <div className="ctaB-clients">

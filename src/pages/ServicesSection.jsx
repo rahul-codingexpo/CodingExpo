@@ -34,28 +34,28 @@ const services = [
     slug: "ui-ux",
     title: "UI/UX Design",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We have competency and well-versed skills to create secure database oriented and user-friendly UI/UX designed website",
   },
   {
     id: 4,
     slug: "seo",
     title: "SEO Services",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Coding Expo strategizes SEO services and solutions for any business by keeping its needs and objectives in mind.",
   },
   {
     id: 5,
     slug: "social-media-management",
     title: "SMM Services",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our social media marketing services ensure that your brand’s social media visibility attracts more visitors to your business.",
   },
   {
     id: 6,
     slug: "pay-per-click-services",
     title: "PPC Services",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Create a long-term profitable revenue model for your website and brand with our result-centric PPC solutions.",
   },
 ];
 
@@ -92,9 +92,9 @@ const ServicesPage = () => {
         <img src={ChatLogo} alt="chat icon" className="cta-icon" />
         <p>
           Get Free Consultations For Tech Solutions{" "}
-          <a href="#enquiry-section" className="cta-link">
+          <Link to="/enquiry" className="cta-link">
             Get A Quote <span>{">"}</span>
-          </a>
+          </Link>
         </p>
       </div>
     </div>

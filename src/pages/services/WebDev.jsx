@@ -12,49 +12,55 @@ import {
   FaCogs,
   FaCloud,
 } from "react-icons/fa";
+import css1 from "../../assets/Tools/css1.png";
+import html1 from "../../assets/Tools/html5.png";
+import js1 from "../../assets/Tools/js1.png";
+import react1 from "../../assets/Tools/react1.png";
+import shopify1 from "../../assets/Tools/shopifyy1.png";
+import wordpress1 from "../../assets/Tools/wordpress-6942722_640.webp";
 
 const services = [
   {
     id: 1,
     slug: "web-development",
-    title: "Website Design & Development",
+    title: "Valuable Website Development Services",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our web developer’s squad forever researches with out-of-the-box innovation to make your website authentic so it entices your potential audience.",
   },
   {
     id: 2,
     slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Static Website Development",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We have a static web development team that looks after creating static websites and makes sure every project fits according to modern technology and business demands.",
   },
   {
     id: 3,
     slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "Dynamic Website Development",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We have created many fantastic dynamic websites that are functionally strong aesthetically appealing. Our dynamic website development work is at par excellence",
   },
   {
     id: 4,
     slug: "seo",
-    title: "SEO Services",
+    title: "Ecommerce Website Development",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our group of developers is intelligent and masters in developing spectacular ecommerce websites for your online shopping business.",
   },
   {
     id: 5,
     slug: "social-media-management",
-    title: "SMM Services",
+    title: "WordPress Development",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We have a WordPress web development team, and they are skilled in all types of CMS development including WordPress.",
   },
   {
     id: 6,
     slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "Shopify Development",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Being a topmost Shopify websites, we have enhanced our visibility across different online platforms and search engines. We create customized Shopify websites for our clients.",
   },
 ];
 
@@ -69,119 +75,126 @@ const Consulting = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
-              <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
-              </span>
-              Consulting Services{" "}
+              Reputed <span className="blue">Web Development </span>
+              Company{" "}
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          Websites are the representation of your business when you want to take
+          it to the online platform. Navika Digital is a proficient website
+          development company that has produced prolific projects for different
+          businesses. It has taken web development and design to the peak level.
+          We have been praised in many international forums because of our
+          sensible approach and client-driven thinking. We use state-of-the-art
+          techniques for website development that raise the standard of business
+          enhancement,
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
-        <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
-        </h2>
+        <h2>Our Result-Centric Web Development Services</h2>
+
         <ul>
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Search Engine Friendly Website</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Nowadays, only creating a website is not sufficient. One must
+                have a website that is SEO-friendly. The term SEO friendly means
+                your website should be developed so that search engines can
+                accept and allow it for indexing and crawling. The lack of SEO
+                friendly website interface means you may not get an online
+                presence, search engine ranking, web traffic and eventually
+                business leads. Navika Digital creates and performs SEO-centric
+                websites for all businesses and clients.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>Mobile Friendly Responsive Websites</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                A website needs to pass the criteria of responsive and mobile
+                friendliness. Today, more than 70% of the website traffic comes
+                from mobile devices. You may not be able to skip the advantages
+                of web traffic coming from mobile devices. Moreover, if your
+                website is not adjusting and responsive to mobile and other
+                devices apart from computers and laptops, then you may lose your
+                potential customers and business leads. Our website development
+                comes with completely mobile friendliness and responsive nature.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>CMS Based Websites</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We make an intuitive CM-based website that easily integrates
+                with the backend, front- end and user’s perspective. One can
+                easily modify, publish and delete the content present in the
+                website because of robust CMS-based website development. Our CMS
+                web development services can cut the time-consuming process, and
+                you can update your business website quickly with one go.
               </div>
             </p>
           </li>
           <li>
-            <h4>Optimizing Emails</h4>
+            <h4>OAppealing UI/UX interfaces</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Apart from vigorous backend development, the fantastic web
+                developers at Navika Digital do their tasks with complete
+                devotion. Developer’s team confirms that your website appears as
+                an eye-thrilling experience to all your visitors and users. Our
+                developers conduct intensive research to design communicative
+                and attractive UI/UX interfaces to create fantastic and
+                profitable businesses that harmonize with your business’s
+                purposes.
               </div>
             </p>
           </li>
           <li>
-            <h4>Mobile App Development Consulting</h4>
+            <h4>Simple and Effortless Website Navigation</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We have a squad of web developers who confirm that the website
+                development course of action complements it with an easy
+                navigation feature. It means your website’s users and visitors
+                can navigate from one of the websites to another easily with no
+                hurdles. Users can rapidly redirect and access different pages
+                of the website without any laborious effort.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Split Inspection Approach</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                We use split inspection approach to examine the campaigns
+                fluctuation based on two sperate alternatives. After that we
+                settle on the accurate and relevant approach between the both
+                alternative and then prepare to send emails to interested
+                recipients..
               </div>
             </p>
           </li>
@@ -215,20 +228,16 @@ const Consulting = () => {
       </section>
       <section className="uiux-tools-section">
         <div className="tools-heading">
-          <h2>Tools We Use in UI/UX design</h2>
+          <h2>Tools We Use in web development</h2>
           <p>
-            UX design applies to both physical and digital services/products. It
-            helps in creating framework design solutions for obstacles that
-            users meet while using the product or website. It focuses on
-            improving the complete user experience from the beginning to the
-            final phase. The objective of UX design is to deliver a product that
-            makes users contented because of their efficiency. While UI design
-            applies only to digital services and products. User interface design
-            distillates visual aspects that enable users to align with the
-            product. UI involves in making a blend of images, animation, colors,
-            typography etc. User Interface design (UI) aims to customize a
-            product that provides creative and visual satisfaction to users. We
-            use software for UI/UX designs:
+            Since we have been appreciated for our sincere work in the web
+            development domain, we have applied superb technologies, tools, and
+            programming languages to develop websites. Our website creators have
+            comprehensive knowledge of frameworks, libraries, and programming
+            applications. That is why all our gifted web developers prepare
+            high-grade quality that delivers spectacular user experience. Find
+            out the list of technologies we utilize for website development
+            services
           </p>
         </div>
 
@@ -238,46 +247,28 @@ const Consulting = () => {
           </div>
           <div className="tools-grid">
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Figma"
-              />
-              <p>Figma</p>
+              <img src={css1} alt="css" />
+              <p>CSS</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Photoshop"
-              />
-              <p>PhotoShop</p>
+              <img src={html1} alt="HTML" />
+              <p>HTML</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="Illustrator"
-              />
-              <p>Illustrator</p>
+              <img src={js1} alt="js" />
+              <p>JavaScript</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Corel Draw"
-              />
-              <p>Corel Draw</p>
+              <img src={react1} alt="react" />
+              <p>React</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Canva"
-              />
-              <p>Canva</p>
+              <img src={wordpress1} alt="wordpress" />
+              <p>Wordpress</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="InDesign"
-              />
-              <p>InDesign</p>
+              <img src={shopify1} alt="shopify" />
+              <p>Shopify</p>
             </div>
           </div>
         </div>

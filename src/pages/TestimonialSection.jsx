@@ -6,6 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import useScrollAnimation from "../components/ScrollAnimation";
 import "../components/Animations.css";
+import reviewer2 from "../assets/reviewer/Sundaram Prakash.jpeg";
+import reviewer3 from "../assets/reviewer/Tayo.jpeg";
+import reviewer4 from "../assets/reviewer/Lusia-Oates.jpg";
 import {
   FaQuoteLeft,
   FaInstagram,
@@ -21,7 +24,7 @@ const testimonials = [
     title: "CEO (Out Thought Taxation)",
     rating: 4.9,
     platform: "instagram",
-    image: "https://i.pravatar.cc/100?img=1",
+    image: reviewer2,
   },
   {
     text: "I was planning to set up my startup business, and I was in search of a team that could develop a robust, innovative and magnificent mobile app for my business. Surprisingly Coding Expo helped me to get potential leads and queries coming from my app.",
@@ -29,7 +32,7 @@ const testimonials = [
     title: "",
     rating: 4.9,
     platform: "facebook",
-    image: "https://i.pravatar.cc/100?img=2",
+    image: reviewer3,
   },
   {
     text: "Being a business owner, I have to look after all the operations of my businesses. I have been fortunate enough to hire Coding Expo for digital marketing. I am delighted with their work, and they have helped my business grow.",
@@ -37,7 +40,7 @@ const testimonials = [
     title: "Founder (Net Capital)",
     rating: 4.9,
     platform: "twitter",
-    image: "https://i.pravatar.cc/100?img=3",
+    image: reviewer4,
   },
   {
     text: "I must confess that Coding Expo is an excellent company with which to collaborate. I hired them to create my e-commerce website, and they have done a commendable job. They provided me with the website before the deadline",
@@ -45,7 +48,7 @@ const testimonials = [
     title: "CEO (Out Thought Taxation)",
     rating: 4.9,
     platform: "instagram",
-    image: "https://i.pravatar.cc/100?img=1",
+    image: reviewer2,
   },
   {
     text: "I was planning to set up my startup business, and I was in search of a team that could develop a robust, innovative and magnificent mobile app for my business. Surprisingly Coding Expo helped me to get potential leads and queries coming from my app.",
@@ -53,7 +56,7 @@ const testimonials = [
     title: "",
     rating: 4.9,
     platform: "facebook",
-    image: "https://i.pravatar.cc/100?img=2",
+    image: reviewer3,
   },
   {
     text: "Being a business owner, I have to look after all the operations of my businesses. I have been fortunate enough to hire Coding Expo for digital marketing. I am delighted with their work, and they have helped my business grow.",
@@ -61,7 +64,7 @@ const testimonials = [
     title: "Founder (Net Capital)",
     rating: 4.9,
     platform: "twitter",
-    image: "https://i.pravatar.cc/100?img=3",
+    image: reviewer4,
   },
 ];
 

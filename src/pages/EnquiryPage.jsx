@@ -10,7 +10,7 @@ const EnquirySection = () => {
   const callRef = useScrollAnimation();
   const emailRef = useScrollAnimation();
   return (
-    <section className="enquiry-section">
+    <section className="enquiry-section" id="enquiry-page">
       <div className="enquiry-tf-container">
         <div className="enquiry-container">
           {/* Left Side */}
@@ -34,8 +34,7 @@ const EnquirySection = () => {
                   <div>
                     <span className="label">Call For Inquiry</span>
                     <br />
-                    <p className="value">+91-93158 65976</p>
-                    <p className="value">+91-77669 57363</p>
+                    <p className="value">+91 9643054453</p>
                   </div>
                 </div>
                 <br />

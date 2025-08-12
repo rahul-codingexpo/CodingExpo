@@ -15,6 +15,8 @@ import PPC from "../pages/services/PPC";
 import ScrollToTop from "../components/ScrollToTop";
 import SMM from "../pages/services/SMM";
 import MailMarketing from "../pages/services/MailMarketing";
+import Enquiry from "../pages/EnquiryPage";
+import PaymentPage from "../pages/payment";
 export default function AllRoutes() {
   return (
     <>
@@ -23,6 +25,8 @@ export default function AllRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/about-company" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/enquiry" element={<Enquiry />} />
+        <Route path="/payment" element={<PaymentPage />} />
         <Route path="/services">
           <Route path="consulting" element={<Consulting />} />
           <Route path="web-development" element={<WebDev />} />

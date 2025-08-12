@@ -37,31 +37,31 @@ import "../components/Animations.css";
 const testimonials = [
   {
     img: reviewer1,
-    text: "I recently hired Coding Expo to revamp my website and am thrilled with the results I recently hired Coding Expo to revamp my website and am thrilled with the results I recently hired Coding Expo to revamp my website and am......",
+    text: "I recently hired Navika Digital to revamp my website and am thrilled with the results. The end product exceeded expectations and boosted traffic and leads. I highly recommend Navika Digital.",
     name: "Zubair Ahmad",
     role: "",
   },
   {
     img: reviewer2,
-    text: "Coding Expo is a great company to work with. I use them for much more than just building a website...",
+    text: "Coding Expo is a great company to work with. I use them for much more than just building a website. It's almost as if they are an employee. They handle my PHP development, web design, web hosting, and SEO.",
     name: "Sundaram Prakash J. Hare",
     role: "CEO (Out Thought Taxation)",
   },
   {
     img: reviewer3,
-    text: "As a small business owner, I was intimidated by branding and promoting online. Coding Expo made it easy...",
+    text: "As a small business owner, I was intimidated by branding and promoting online. Navika Digital Go Digital made it easy and stress-free. They created a plan with social media management, email marketing, and SEO. Results have been fantastic. Highly recommend their services.",
     name: "Tayo",
     role: "",
   },
   {
     img: reviewer4,
-    text: "I recently hired Coding Expo to revamp my website and am happy with the results...",
+    text: "I recently hired Navika Digital to revamp my website and am happy with the results. The end product exceeded my expectations, increasing traffic and leads. I highly recommend Navika Digital for website development.",
     name: "Lusia Oates",
     role: "Founder (Net Capital)",
   },
   {
     img: reviewer5,
-    text: "This company is AMAZING. They are very professional. I hired them to build my website...",
+    text: "This company is AMAZING. They are very professional. I hired them to build my website, and they did an EXCELLENT JOB. Their SEO work was also EXCELLENT, attracting many new customers. They taught me to manage my site. THANK YOU!",
     name: "Krishna Kumar",
     role: "Founder (krishnaflower.com)",
   },
