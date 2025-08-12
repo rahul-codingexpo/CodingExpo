@@ -864,7 +864,12 @@ width: 100%;
     }
         .about-partner-card{
             height: auto;
-            width:80px;
+            width:85px;
+           
+            
+        }
+        .swiper-wrapper{
+            gap:60px !important;
         }
         .swiper{
             margin-top:0px;

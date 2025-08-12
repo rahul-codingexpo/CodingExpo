@@ -31,6 +31,9 @@ import Codeable from "../assets/partnerAboutLogo/codeable.png";
 import Goodfirms from "../assets/partnerAboutLogo/goodfirms.png";
 import Google from "../assets/partnerAboutLogo/google.png";
 
+import useScrollAnimation from "../components/ScrollAnimation";
+import "../components/Animations.css";
+
 const testimonials = [
   {
     img: reviewer1,
@@ -92,12 +95,20 @@ const AboutUs = () => {
     if (index === (current + 1) % total) return "next";
     return "inactive";
   };
-
+  const breadRef = useScrollAnimation();
+  const leftcontentRef = useScrollAnimation();
+  const rightcontentRef = useScrollAnimation();
+  const featureRef = useScrollAnimation();
+  const desRef = useScrollAnimation();
+  const quoteauthorRef = useScrollAnimation();
+  const AvtRef = useScrollAnimation();
+  const subRef = useScrollAnimation();
+  const titleRef = useScrollAnimation();
   return (
     <div>
       {/* Breadcrumb Section */}
       <section className="breadcumb-section relative">
-        <div className="AboutUs-tf-container">
+        <div className="AboutUs-tf-container fade-in-up" ref={breadRef}>
           <div className="title-inner center">
             <h1 className="title text-white mb-18">About Us</h1>
             <div className="title-group text-white">
@@ -112,7 +123,7 @@ const AboutUs = () => {
       <section className="section-about-us about-us-page pd-section relative">
         <div className="tf-container about-us-grid">
           {/* Left Content */}
-          <div className="left-content">
+          <div className="left-content fade-in-up" ref={leftcontentRef}>
             <div className="about-us-content">
               <div className="heading-title">
                 <span className="sub-title texts-blue font-man">About Us</span>
@@ -151,7 +162,7 @@ const AboutUs = () => {
           </div>
 
           {/* Right Counter */}
-          <div className="right-content">
+          <div className="right-content fade-in-up" ref={rightcontentRef}>
             <div className="about-us-counter">
               <h3 className="title">
                 Result-Driven Web Design <a href="#">and </a> Development
@@ -216,7 +227,7 @@ const AboutUs = () => {
       {/* Features Section */}
       <section>
         <div className="tf-container-full feature-about-wrap">
-          <div className="feature-grid">
+          <div className="feature-grid fade-in-up" ref={featureRef}>
             <div className="tf-icon-box">
               <div className="icon">
                 <i className="icon-expert">
@@ -288,16 +299,18 @@ const AboutUs = () => {
               <img src={mainImage} alt="Person" />
             </div>
             <div className="quote-content">
-              <p className="quote-text">
+              <p className="quote-text fade-in-up" ref={desRef}>
                 " Overnight success is an illusion because a winning day comes
                 only after consistently doing effortful practices with
                 commitment. So never hesitate to think big and put in more
                 effort because your actions decide your life".
               </p>
-              <span className="quote-author">--- Harriet Tubman</span>
+              <span className="quote-author fade-in-up" ref={quoteauthorRef}>
+                --- Harriet Tubman
+              </span>
 
-              <div className="quote-bottom">
-                <ul className="avatar-list">
+              <div className="quote-bottom fade-in-up" ref={AvtRef}>
+                <ul className="avatar-list ">
                   <li>
                     <img src={avatar1} alt="Customer 1" />
                   </li>
@@ -326,8 +339,10 @@ const AboutUs = () => {
           <div className="fact-widget">
             {/* Left Side Text */}
             <div className="funfacts-text">
-              <span className="funfacts-subtitle">Company Fun Fact</span>
-              <h2 className="funfacts-title">
+              <span className="funfacts-subtitle fade-in-up" ref={subRef}>
+                Company Fun Fact
+              </span>
+              <h2 className="funfacts-title fade-in-up" ref={titleRef}>
                 Behind the Scenes <br />
                 Surprising Fun Facts <br />
                 About Coding Expo
