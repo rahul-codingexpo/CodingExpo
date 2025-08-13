@@ -4,6 +4,12 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
 import TechImage from "../../assets/technology1.jpg";
 import LiImage from "../../assets/new-img1.png";
+import GoogleTrend from "../../assets/Tools/google-trends.png";
+import SearchConsole from "../../assets/Tools/google-search-console-logo.avif";
+import Ahref from "../../assets/Tools/Ahrefs.jpg";
+import Semrush from "../../assets/Tools/semrush.jpeg";
+import RankTraker from "../../assets/Tools/rank-tracker.jpg";
+import Backlink from "../../assets/Tools/backlink-checker-icon.avif";
 import {
   FaMobileAlt,
   FaPaintBrush,
@@ -16,45 +22,39 @@ import {
 const services = [
   {
     id: 1,
-    slug: "web-development",
-    title: "Website Design & Development",
+    title: "Long-Term Genuine Results",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Suppose you seek the expected results from SEO services in India and ensure genuine results by providing high-quality SEO services. No company can match Coding Expo's talent and devotion in that case.",
   },
   {
     id: 2,
-    slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Ethical SEO practices",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We believe in ethical and standardized SEO services to get long-term results in search engines.",
   },
   {
     id: 3,
-    slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "Proficient SEO Professionals",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We are filled with proficient digital marketing specialists and SEO experts who are aware of the latest search engine algorithms and work according to them to get top results.",
   },
   {
     id: 4,
-    slug: "seo",
-    title: "SEO Services",
+    title: "Huge & Loyal Customer Base",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We have a large clientele network all over India, and our valuable clients are 100% satisfied with our work Strategy.",
   },
   {
     id: 5,
-    slug: "social-media-management",
-    title: "SMM Services",
+    title: "Monitoring of Analytics",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "After sending emails, it is also important to analyze the results and feedback. Email markers closely observe the results and then make strategy accordingly.",
   },
   {
     id: 6,
-    slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "Inspecting SEO Campaigns",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Before sending email, we analyze every email campaign to find out whether it is relevant, error free and spam free.",
   },
 ];
 
@@ -69,119 +69,160 @@ const Consulting = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
-              <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
-              </span>
-              Consulting Services{" "}
+              Coding Expo:{" "}
+              <span className="blue">Best SEO Services Provider</span>
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          Coding Expo is an absolutely unmatched SEO Company worldwide. We
+          deliver superb internet marketing services. We have an up-to-date
+          mechanism of search engine algorithm and encapsulate result-driven
+          tactics to make your business website perform on top ranking in SERP
+          (Search Engine Results page). We endeavor to devise a determined
+          promotion approach that helps elevate the business's revenue and
+          production. We are a modern and advanced digital marketing firm,
+          delivering out-of- the-box results so your business gets tangible
+          exposure.
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
-        <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
-        </h2>
+        <h2>How Coding Expo Start SEO Process for Clients and Businesses</h2>
         <ul>
+          {/* <li>
+            <p>
+              The significance of the internet is undeniable from this current
+              business perspective, and search engines are the most appropriate
+              platforms on which your website can get a probable audience.
+              Search engine optimization promotes your website and business
+              according to well-planned, structured search engine algorithms.
+              Basically, the search engine works from the user perspective so
+              that the website gets noticed by users and you can get potential
+              customers for your business. It helps you to get a high ranking in
+              various search engines, including Google, Yahoo, and Bing. SEO
+              works like a fertilizer for your business, creating links and
+              connections (backlinks in SEO terms) that make your website
+              user-friendly. Making your website viral on the search engine is
+              our responsibility. We have a world-class team of digital
+              marketing experts who know advanced techniques and search engine
+              algorithms. They implement standardized patterns, which could
+              benefit your website and business. Our SEO process includes: -
+            </p>
+          </li> */}
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Consult With The Client And Define Objectives.</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                The initial action is to communicate and meet with the client.
+                It is imperative to know about the organizational aims, intended
+                consumers, business rivals, and their hopes for us. We help
+                clients decide on web marketing purposes, including boosting
+                search positions, fostering consumer interactions, and enhancing
+                web traffic.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>Inspection Of The Website And Analysis</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We practice client website inspection and study it to learn
+                about technological inconsistency, content requirements, and
+                existing SEO scores. The inspection includes backlink count,
+                On-Page SEO, loading speed, mobile responsiveness, broken links,
+                and more.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>Researching Keywords And Building Strategy</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Our search engine optimization professional practices profound
+                keyword study to identify the most leveraging search terms
+                applicable to your business. We also study your competitor's
+                marketing tactics and their keyword approach. On the basis of
+                our study and inspection, we drafted a SEO approach that
+                includes targeting keywords, optimization, and content
+                development.
               </div>
             </p>
           </li>
           <li>
-            <h4>Optimizing Emails</h4>
+            <h4>On-Page And Technical SEO</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Performing on-page SEO activities is vital to start an SEO
+                campaign for any website. We ensure we put relevant keywords,
+                create meta tags, use heading tags, interlink, and create rich
+                and fresh content for on-page optimization. Technical SEO
+                modification includes improving website loading time, ensuring
+                the website is user- and search- engine-friendly, developing
+                search-engine-friendly URLs, using HTTPS security protocols,
+                optimizing crawl budget, redirecting or removing broken links,
+                etc.
               </div>
             </p>
           </li>
           <li>
-            <h4>Mobile App Development Consulting</h4>
+            <h4>Generating Fresh and High-Quality Content</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Content is the soul of an SEO campaign, and we ensure that we
+                write quality content that is highly optimized according to
+                search engine algorithms. We use intended keywords and reflect
+                user intention in the content so that your customers can easily
+                engage with your website and business.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Creating High DA PA Backlinks</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Backlinks or link building are necessary parts of off-page SEO.
+                On-page SEO alone is not sufficient to drive traffic and gain
+                top search engine rankings. Creating top-grade backlinks and
+                link-building is also essential. So, we do it with proven
+                tactics and case studies to achieve elevated web traffic and
+                rankings.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Tracking SEO Progress and Reporting</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                We apply the finalized SEO approach with the team and client.
+                After that, we will keep track of the website's progress by
+                utilizing analysis tools such as Search Console and Google
+                Analytics. We keep a record of every week's ranking, web
+                traffic, customer engagement, and everyday reports to the
+                client. We perform modifications according to the metrics and
+                information from the analysis tools.
               </div>
             </p>
           </li>
@@ -192,8 +233,7 @@ const Consulting = () => {
       <section className="service-highlights">
         <h2>Determine the Potent</h2>
         <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
+          Why Settle on Coding Expo Company for SEO Services
         </p>
         <div className="services-grid">
           {services.map((service, index) => (
@@ -215,20 +255,13 @@ const Consulting = () => {
       </section>
       <section className="uiux-tools-section">
         <div className="tools-heading">
-          <h2>Tools We Use in UI/UX design</h2>
+          <h2>Tools and SEO Tactics, we use</h2>
           <p>
-            UX design applies to both physical and digital services/products. It
-            helps in creating framework design solutions for obstacles that
-            users meet while using the product or website. It focuses on
-            improving the complete user experience from the beginning to the
-            final phase. The objective of UX design is to deliver a product that
-            makes users contented because of their efficiency. While UI design
-            applies only to digital services and products. User interface design
-            distillates visual aspects that enable users to align with the
-            product. UI involves in making a blend of images, animation, colors,
-            typography etc. User Interface design (UI) aims to customize a
-            product that provides creative and visual satisfaction to users. We
-            use software for UI/UX designs:
+            Coding Expo has already set milestones in providing outstanding
+            results and performance for the business and website. We are
+            consistently doing better work with the appreciation of our clients
+            and the fraternity of Digital marketing. We use plenty of tools to
+            make our SEO process fruitful and beneficial for clients.
           </p>
         </div>
 
@@ -238,46 +271,28 @@ const Consulting = () => {
           </div>
           <div className="tools-grid">
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Figma"
-              />
-              <p>Figma</p>
+              <img src={GoogleTrend} alt="GoogleTrend" />
+              <p>Google Trends</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Photoshop"
-              />
-              <p>PhotoShop</p>
+              <img src={SearchConsole} alt="search console" />
+              <p>Search Console</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="Illustrator"
-              />
-              <p>Illustrator</p>
+              <img src={Ahref} alt="Ahref" />
+              <p>Ahref</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Corel Draw"
-              />
-              <p>Corel Draw</p>
+              <img src={Semrush} alt="semrush" />
+              <p>SEMRUSH</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Canva"
-              />
-              <p>Canva</p>
+              <img src={RankTraker} alt="rank traker" />
+              <p>Rank Tracker</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="InDesign"
-              />
-              <p>InDesign</p>
+              <img src={Backlink} alt="Backlink" />
+              <p>Backlink Checker</p>
             </div>
           </div>
         </div>

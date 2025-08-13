@@ -4,6 +4,12 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
 import TechImage from "../../assets/technology1.jpg";
 import LiImage from "../../assets/new-img1.png";
+import MailChimp from "../../assets/Tools/mailChimp.jpeg";
+import Sendinblue from "../../assets/Tools/sendinBlue.png";
+import Mailerlite from "../../assets/Tools/mailerLite.jpeg";
+import ZohoCampaign from "../../assets/Tools/zoho-campaigns.png";
+import Converkit from "../../assets/Tools/convertKit.jpeg";
+import Brevo from "../../assets/Tools/brevo.png";
 import {
   FaMobileAlt,
   FaPaintBrush,
@@ -16,45 +22,39 @@ import {
 const services = [
   {
     id: 1,
-    slug: "web-development",
-    title: "Website Design & Development",
+    title: "Interaction with Different Audiences",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Email marketing helps you to get potential users and also you can connect with different audience. These audience can be your loyal customers.",
   },
   {
     id: 2,
-    slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Develop customer loyalty",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Email marketing is not only about pitching for your service and products, but it is also about getting in touch with your audience. You can send them wishes from time to time",
   },
   {
     id: 3,
-    slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "Business expansion",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "One of the trusted ways to expand your business is to enhance your customer acquisition skills. Email marketing is the best practice for customer acquisition and reaching to your potential clients.",
   },
   {
     id: 4,
-    slug: "seo",
-    title: "SEO Services",
+    title: "Quick and Time Saving",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Email marketing tools can help you sending thousands of mails within couple of minutes. You kust need professional email marketers to perform the job.",
   },
   {
     id: 5,
-    slug: "social-media-management",
-    title: "SMM Services",
+    title: "Monitoring of Analytics",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "After sending emails, it is also important to analyze the results and feedback. Email markers closely observe the results and then make strategy accordingly.",
   },
   {
     id: 6,
-    slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "Inspecting Email Campaigns",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Before sending email, we analyze every email campaign to find out whether it is relevant, error free and spam free.",
   },
 ];
 
@@ -69,85 +69,84 @@ const Consulting = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
-              <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
-              </span>
-              Consulting Services{" "}
+              Business Leads,{" "}
+              <span className="blue">Growth and Customer Acquisitions </span>
+              That is What Email Marketing Does
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          More than 3 billion users across the globe utilize email daily for
+          interaction. The active users of emails are far more than any other
+          platform. Now can you imagine what does your business is missing while
+          not getting email marketing as a tool for getting customers and leads?
+          Are you capitalizing the perks of email marketing in your business
+          marketing and promotion? If not, then what is the use of holding your
+          mind anymore. Catch the chance to align your business with the
+          appropriate audience at the correct time and improve your sales with
+          Coding Expo email marketing services. We are first rate email
+          marketing agency that perform whatever it takes to amplify the
+          business revenue of the client. Therefore, appoint Coding Expo as your
+          email marketing agency for business-driven email campaigns. We will
+          compose campaign that complement your organizational purpose
+          precisely.
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
-        <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
-        </h2>
+        <h2>What Involve in Our Email Marketing Campaigns</h2>
         <ul>
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Studying of Targeted Audience</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                An email marketing campaign become fruitful and profitable when
+                you have accurate identification of your actual interested
+                audience. When you study your audience behavior, pattern and
+                interest, it allows you to under their choice, hopes and
+                intention of mal recipients. We compose precise email sign up
+                forms to extract entire details needed for study. We also ensure
+                that we don’t overburden this form and make it easy for
+                recipient.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>Campaign Tracking and Reporting</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Regular inspection and reporting of campaign reflect its
+                progress and scope of development. Evaluating campaign is
+                essential because it can provide you the insights on how your
+                campaign is going and what you need to do for the improvement.
+                At Coding Expo, we extensively inspect the campaign outcomes to
+                understand all insights and data. Moreover, our email marketing
+                leaders also provide their valuable inputs and prepare report.
+                They also give their recommendations on revision of the campaign
+                to make it successful.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>Marketing Automation</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Marketing automation is avital ingredient of email campaign. It
+                facilitates a business to set powerful and durable relation with
+                its audience. We have proficiency in using robust automation
+                tools to send emails to the accurate audience timely.
+                Subscription renewal, personalized wishes, product branding and
+                other reminders are the part of automated emails.
               </div>
             </p>
           </li>
@@ -158,30 +157,49 @@ const Consulting = () => {
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Writing and drafting emails is not sufficient, because a simple
+                email cannot appeal anyone. Acting as a frontrunning email
+                marketing service provider in India, we look into the email and
+                make it presentable. We optimize email and make it appealing for
+                the recipients. We also utilized state of the art tools
+                including segmentation, analytics, recipient history to confirm
+                that the recipient receive the email in accurate email address.
+                We conduct A/B testing to augment open and click through rates.
+                We employ relevant efforts to produce emails that precisely
+                customized for your business welfare.
               </div>
             </p>
           </li>
           <li>
-            <h4>Mobile App Development Consulting</h4>
+            <h4>Strategizing Campaign</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                A unified and eye-pleasing email template and design ensure the
+                campaign’s success. Our email marketers are well learned in
+                giving business profiting email that can address your business
+                concerns. Our effectively designed emails can attract
+                recipient’s mind. We compose appealing and useful CTAs which can
+                influence email recipient to respond actively and act. We
+                construct email for the accomplishment of your commercial goals
+                that can be targeting fresh audience or refocusing on old one.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Split Inspection Approach</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                We use split inspection approach to examine the campaigns
+                fluctuation based on two sperate alternatives. After that we
+                settle on the accurate and relevant approach between the both
+                alternative and then prepare to send emails to interested
+                recipients..
               </div>
             </p>
           </li>
@@ -192,8 +210,7 @@ const Consulting = () => {
       <section className="service-highlights">
         <h2>Determine the Potent</h2>
         <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
+          Why Email Marketing is Effective for your business
         </p>
         <div className="services-grid">
           {services.map((service, index) => (
@@ -215,21 +232,7 @@ const Consulting = () => {
       </section>
       <section className="uiux-tools-section">
         <div className="tools-heading">
-          <h2>Tools We Use in UI/UX design</h2>
-          <p>
-            UX design applies to both physical and digital services/products. It
-            helps in creating framework design solutions for obstacles that
-            users meet while using the product or website. It focuses on
-            improving the complete user experience from the beginning to the
-            final phase. The objective of UX design is to deliver a product that
-            makes users contented because of their efficiency. While UI design
-            applies only to digital services and products. User interface design
-            distillates visual aspects that enable users to align with the
-            product. UI involves in making a blend of images, animation, colors,
-            typography etc. User Interface design (UI) aims to customize a
-            product that provides creative and visual satisfaction to users. We
-            use software for UI/UX designs:
-          </p>
+          <h2>Tools We Use in Email Marketing</h2>
         </div>
 
         <div className="tools-grid-wrapper">
@@ -238,46 +241,28 @@ const Consulting = () => {
           </div>
           <div className="tools-grid">
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Figma"
-              />
-              <p>Figma</p>
+              <img src={MailChimp} alt="Mailchimp" />
+              <p>Mailchimp</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Photoshop"
-              />
-              <p>PhotoShop</p>
+              <img src={Sendinblue} alt="Sendinblue" />
+              <p>Sendinblue</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="Illustrator"
-              />
-              <p>Illustrator</p>
+              <img src={Mailerlite} alt="MailerLite" />
+              <p>MailerLite</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Corel Draw"
-              />
-              <p>Corel Draw</p>
+              <img src={ZohoCampaign} alt="ZohoCampaign" />
+              <p>Zoho Campaign</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Canva"
-              />
-              <p>Canva</p>
+              <img src={Converkit} alt="convertkit" />
+              <p>ConvertKit</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="InDesign"
-              />
-              <p>InDesign</p>
+              <img src={Brevo} alt="Brevo" />
+              <p>Brevo</p>
             </div>
           </div>
         </div>

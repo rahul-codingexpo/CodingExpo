@@ -144,8 +144,8 @@ const Consulting = () => {
               </div>
               <div className="p-content">
                 The ability to implement programming skills to develop a
-                brilliant website is our fundamental agenda. Navika Digital has
-                a group of website developers with masters in different
+                brilliant website is our fundamental agenda. Coding Expo has a
+                group of website developers with masters in different
                 programming skills, including CSS, HTML, React.JS, JavaScript,
                 and more. We have developed a myriad of websites for various
                 industries and businesses. No matter what the nature of your

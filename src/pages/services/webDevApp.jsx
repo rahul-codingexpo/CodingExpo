@@ -91,7 +91,7 @@ const Consulting = () => {
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
-        <h2>Why Pick Navika Digital As your Web App Development Company</h2>
+        <h2>Why Pick Coding Expo As your Web App Development Company</h2>
         <ul>
           <li>
             <h4>Evolving development actions:</h4>
@@ -182,7 +182,7 @@ const Consulting = () => {
               <div className="p-content">
                 many companies can develop web apps, but few can build
                 technically strong, secure, standardized, universally acclaimed
-                web apps, and Navika Digital is one of them. Our crew crafts web
+                web apps, and Coding Expo is one of them. Our crew crafts web
                 apps that synchronize technology with your business to make it
                 accessible, easy to use and acceptable among your potential
                 users.

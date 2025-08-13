@@ -29,8 +29,9 @@ const logos = [
 ];
 
 const InfoBox = ({ icon, title, description }) => {
+  const boxRef = useScrollAnimation();
   return (
-    <div className="info-box-wrapper">
+    <div className="info-box-wrapper fade-in-up" ref={boxRef}>
       <div className="icon-box">
         <div className="svg-block">
           <svg
@@ -59,7 +60,6 @@ const InfoBox = ({ icon, title, description }) => {
 };
 
 const PartnersSection = () => {
-  const boxRef = useScrollAnimation();
   return (
     <section className="section-partner bg-1">
       <div className="partner-tf-container">
@@ -108,8 +108,9 @@ const PartnersSection = () => {
         </div>
 
         {/* Info Boxes */}
-        <div className="info-boxes-row fade-in-up" ref={boxRef}>
+        <div className="info-boxes-row">
           <InfoBox
+            className="fade-in-up"
             icon={<GiBullseye />}
             title="Digitized Solutions"
             description="We believe in delivering excellent digitized solutions in an innovative way and perspective"

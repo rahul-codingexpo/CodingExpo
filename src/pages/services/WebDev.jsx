@@ -82,7 +82,7 @@ const Consulting = () => {
         </div>
         <p className="hero-desc">
           Websites are the representation of your business when you want to take
-          it to the online platform. Navika Digital is a proficient website
+          it to the online platform. Coding Expo is a proficient website
           development company that has produced prolific projects for different
           businesses. It has taken web development and design to the peak level.
           We have been praised in many international forums because of our
@@ -110,7 +110,7 @@ const Consulting = () => {
                 accept and allow it for indexing and crawling. The lack of SEO
                 friendly website interface means you may not get an online
                 presence, search engine ranking, web traffic and eventually
-                business leads. Navika Digital creates and performs SEO-centric
+                business leads. Coding Expo creates and performs SEO-centric
                 websites for all businesses and clients.
               </div>
             </p>
@@ -157,9 +157,9 @@ const Consulting = () => {
               </div>
               <div className="p-content">
                 Apart from vigorous backend development, the fantastic web
-                developers at Navika Digital do their tasks with complete
-                devotion. Developer’s team confirms that your website appears as
-                an eye-thrilling experience to all your visitors and users. Our
+                developers at Coding Expo do their tasks with complete devotion.
+                Developer’s team confirms that your website appears as an
+                eye-thrilling experience to all your visitors and users. Our
                 developers conduct intensive research to design communicative
                 and attractive UI/UX interfaces to create fantastic and
                 profitable businesses that harmonize with your business’s

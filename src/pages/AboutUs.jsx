@@ -37,7 +37,7 @@ import "../components/Animations.css";
 const testimonials = [
   {
     img: reviewer1,
-    text: "I recently hired Navika Digital to revamp my website and am thrilled with the results. The end product exceeded expectations and boosted traffic and leads. I highly recommend Navika Digital.",
+    text: "I recently hired Coding Expo to revamp my website and am thrilled with the results. The end product exceeded expectations and boosted traffic and leads. I highly recommend Coding Expo.",
     name: "Zubair Ahmad",
     role: "",
   },
@@ -49,7 +49,7 @@ const testimonials = [
   },
   {
     img: reviewer3,
-    text: "As a small business owner, I was intimidated by branding and promoting online. Navika Digital Go Digital made it easy and stress-free. They created a plan with social media management, email marketing, and SEO. Results have been fantastic. Highly recommend their services.",
+    text: "As a small business owner, I was intimidated by branding and promoting online. Coding Expo Go Digital made it easy and stress-free. They created a plan with social media management, email marketing, and SEO. Results have been fantastic. Highly recommend their services.",
     name: "Tayo",
     role: "",
   },

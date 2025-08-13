@@ -15,45 +15,39 @@ import {
 const services = [
   {
     id: 1,
-    slug: "web-development",
-    title: "Website Design & Development",
+    title: "Brand Goodwill and Loyalty",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "With social media management, you can Increase social visibility and brand loyalty for your business.",
   },
   {
     id: 2,
-    slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Improves Web Traffic",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our social media campaign will help businesses bring massive web traffic to the landing page.",
   },
   {
     id: 3,
-    slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "Uplift User Engagement and Interaction",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Social media optimization, marketing, and management help boost followers and engagement and acquire potential consumers.",
   },
   {
     id: 4,
-    slug: "seo",
-    title: "SEO Services",
+    title: "Create a Favorable Atmosphere for Profit-making",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our campaign can make your business more profitable and viral.",
   },
   {
     id: 5,
-    slug: "social-media-management",
-    title: "SMM Services",
+    title: "Improve Customer Service",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Social media marketing campaigns also help improve customer service because advertisers know what clients actually want and how to maximize their benefits.",
   },
   {
     id: 6,
-    slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "Retarget Skipped Customers",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "With our rigorous social media ads campaign, we can also retarget skipped users who have paid attention to the services but skipped them because of some reason.",
   },
 ];
 
@@ -68,119 +62,126 @@ const Consulting = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
-              <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
-              </span>
-              Consulting Services{" "}
+              Coding Expo:{" "}
+              <span className="blue">Magnificent Social Media </span>
+              Management Company
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          With the enhancement of digitalization, several businesses have formed
+          a new texture for growth. Social media management has become an
+          integral part of branding and promotion strategy. Digital presence and
+          online exposure of many businesses are trending. Now, managing social
+          reputation through various popular social media channels becomes
+          necessary. Coding Expo is functioning as a dominant social media
+          management company in India. Social media branding is getting massive
+          responses as well as providing a large customer base for your
+          business. Not just one business but every industry is going through
+          with this spellbound social media era. It is the biggest medium to
+          connect with your customers or followers and makes them aware of your
+          entire future venture. Now, you can see TV personalities, film actors,
+          and other reputed organizations that are using social media for their
+          image branding.
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
-        <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
-        </h2>
+        <h2>Coding Expo Social Media Company Services</h2>
         <ul>
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Planning a Social Media Approach for Business</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Planning a social media approach for businesses involves
+                assigning a devoted social media manager. Our organization
+                strategizes a social media plan of action in which we decide and
+                discuss with the client how we will utilize social media to
+                capitalize on their business aims. This plan may include work
+                such as content creation, detecting the intended audience, and
+                studying competitors.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>Preparing Content for Social Media</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Content with original ideas, creative aspects, and alignment
+                with the consumer's perspective is vital for social media
+                management and marketing. Social media content creation includes
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>Using Graphic and Images</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Graphic design and images are essential to making your social
+                media campaign lucrative and fruitful. This can involve creating
+                GIFs, memes, videos, and infographics to present your brand tone
+                and character to your expected followers.
               </div>
             </p>
           </li>
           <li>
-            <h4>Optimizing Emails</h4>
+            <h4>Social Media Advertising & Marketing</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Occupying the role of a market leader, Coding Expo uses social
+                media advertising and marketing to convey messages and services
+                to the end users. We are innovators in composing social media
+                ads, posts, and videos through paid ad campaigns, ad copy
+                creation, and visual designs. Our SMM will definitely help
+                businesses get leads from interested buyers and eventually raise
+                their revenue.
               </div>
             </p>
           </li>
           <li>
-            <h4>Mobile App Development Consulting</h4>
+            <h4>Examining and Preparing Reports on Social Media Campaigns</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Acting like a premier social media management company, we track
+                all social media campaigns and make necessary revisions based on
+                feedback and insights. Additionally, we send daily reports of
+                the campaign's progress and success to the client, which gives
+                them a sense of trust that we are doing our work with complete
+                perseverance.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Influencer Marketing</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                During social media management, we keep managing all social
+                media platforms and reverting back to responses through posts,
+                comments, and messages. Additionally, we apply promotion
+                strategies such as contests to increase user engagement on
+                Facebook and Twitter. We also Communicate and connect with other
+                pages, communities, and groups to improve your brand visibility.
+                Moreover, we also take the help of social media influencers to
+                expand the reach of your brand.
               </div>
             </p>
           </li>
@@ -191,8 +192,7 @@ const Consulting = () => {
       <section className="service-highlights">
         <h2>Determine the Potent</h2>
         <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
+          What You Get from Social Media Management and Marketing
         </p>
         <div className="services-grid">
           {services.map((service, index) => (
@@ -210,6 +210,16 @@ const Consulting = () => {
               </span>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="uiux-tools-section">
+        <div className="tools-heading">
+          <h2>Hire Coding Expo as Your Social Media Management Company</h2>
+          <p>
+            Once you associate with Coding Expo, you will definitely get
+            elevated social media management services that naturally enhance
+            your brand credibility and customer engagement.
+          </p>
         </div>
       </section>
     </div>

@@ -15,45 +15,39 @@ import {
 const services = [
   {
     id: 1,
-    slug: "web-development",
-    title: "Website Design & Development",
+    title: "Interactive Features and Solutions",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Customers and users admire dynamic apps that update automatically if any recent development happens. We can grasp the psyche of the market.",
   },
   {
     id: 2,
-    slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Breathtaking UI/UX Designs",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Alluring UI and Smooth UX amalgamation can make an ecommerce app fruitful and beneficial.",
   },
   {
     id: 3,
-    slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "One-Time Investment",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Once you invest in an e-commerce app through Coding Expo, you are making the smartest investment decision of your life.",
   },
   {
     id: 4,
-    slug: "seo",
-    title: "SEO Services",
+    title: "Progressive Technology",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Coding Expo certifies that the commerce apps we built are the result of employing futuristic tech systems and cohesive techniques.",
   },
   {
     id: 5,
-    slug: "social-media-management",
-    title: "SMM Services",
+    title: "High-Caliber Quality",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Functioning as a premier ecommerce app development company in India, our programmers and app developers have long-standing wisdom .",
   },
   {
     id: 6,
-    slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "Demand Based Apps",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Uninterrupted shopping adventure and a Proficient UI/UX mechanism make our ecommerce app better.",
   },
 ];
 
@@ -68,119 +62,132 @@ const Consulting = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
+              Coding Expo:{" "}
               <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
+                Innovative Ecommerce App Development{" "}
               </span>
-              Consulting Services{" "}
+              Company in India
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          Ecommerce businesses have changed their gear from websites to
+          smartphones. Now, people use smartphones extensively for online
+          shopping instead of laptops or PC. It eventually compels us to develop
+          an e-commerce mobile app to make the shopping experience better and
+          more enjoyable. Ecommerce app development is not a new thing for
+          businesses, but in a couple of years, it has tremendously drawn
+          attention. Various businesses have begun to so that they can provide
+          their services and goods online via ecommerce apps. If you want to
+          remain in the competition in the ecommerce industry, then developing
+          an ecommerce app should be your priority. Coding Expo is an ecommerce
+          app development agency . We present mobile app development, including
+          ecommerce apps. Tailored app development is our unique selling point.
+          We practice making a spectacular app for your online shopping business
+          or retail store so that it can easily align with your business aims.
+          Our motive is to eventually raise your revenue, ROI, and sales, as
+          well as deliver a great user experience to your consumers. Coding Expo
+          is a rare blend of functionally rich and artistically soothing in
+          terms of app development for online shopping businesses. Our
+          accomplished and well-read ecommerce app developers hold diligence in
+          next-generation technology to establish a superb ecommerce mobile
+          application. Our app development can ensure that your business will
+          reach the peak of achievement. Furthermore, we present extensible and
+          reasonably-priced products.
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
         <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
+          Why Coding Expo is Ideal for E-Commerce Application Development?
         </h2>
         <ul>
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Functionally Robust and Visually Pleasing Apps</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We wisely handle the synchronization among programming, visual
+                effects, market insights, and breakthrough technology. Every app
+                and development project at Coding Expo must undergo testing and
+                auditing before going live.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>Proficiency in Cross Platform App Development</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Our ecommerce app coders prepare coding in a way that it can
+                easily accepted and adjusted on all platforms. For example, if
+                we have coded an app for the Android platform, then it will
+                reflect the same in iOS, and we don't need to code again for the
+                other platform.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>Seasoned and Committed In-House Task Force</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Our programmers and developers are all part of our in-house
+                workforce, which eventually means that we don't give work to any
+                outsourcing agency or freelancer. Our flock of programmers and
+                app developers has already infused evolved programming into
+                their veins.
               </div>
             </p>
           </li>
           <li>
-            <h4>Optimizing Emails</h4>
+            <h4>Agility in Selecting the Finest Resources</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Our customers have the liberty to pick one of our talented,
+                mastered, and veteran app developers from our fantastic
+                workforce. All our app programmers are the biggest assets for us
+                and our clients.
               </div>
             </p>
           </li>
           <li>
-            <h4>Mobile App Development Consulting</h4>
+            <h4>An Inclusive Package</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We obtain an inclusive bundle of project managers, UI/UX
+                developers, mobile app developers, digital marketers, web
+                developers, website designers, and content writers to accomplish
+                your business's desires.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Continuous Journey in Ecommerce App Development</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                We are close to celebrating our achievement every second in the
+                ecommerce domain because of our fruitful delivery, customer
+                contentment, and round-the-time assistance. We have wholesome
+                understanding, familiarity, and an extensive assortment of
+                wisdom throughout this expedition that keeps us innovative every
+                time.
               </div>
             </p>
           </li>
@@ -191,8 +198,8 @@ const Consulting = () => {
       <section className="service-highlights">
         <h2>Determine the Potent</h2>
         <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
+          What Benefits Businesses Will Get with Our Customized eCommerce App
+          Development?
         </p>
         <div className="services-grid">
           {services.map((service, index) => (

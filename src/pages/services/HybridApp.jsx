@@ -4,6 +4,10 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import image from "../../assets/bg-1.jpg";
 import TechImage from "../../assets/technology1.jpg";
 import LiImage from "../../assets/new-img1.png";
+import react1 from "../../assets/Tools/react1.png";
+import flutter from "../../assets/Tools/flutter.png";
+import android from "../../assets/Tools/android-studio.png";
+import kotlin from "../../assets/Tools/kotlin-img1.png";
 import {
   FaMobileAlt,
   FaPaintBrush,
@@ -16,45 +20,38 @@ import {
 const services = [
   {
     id: 1,
-    slug: "web-development",
-    title: "Website Design & Development",
+    title: "Developing Client-Focused Hybrid Apps",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our specialty is composing customer-driven apps with an intuitive user interface, design, and, ultimately, consumer contentment.",
   },
   {
     id: 2,
-    slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Upgradeable Apps Development Concept",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We confirm that every hybrid app that represents a specific business doesn't suffer because of its lack of scalability scope.",
   },
   {
     id: 3,
-    slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "Light on Your Budget",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "You don't have to stress out about the pricing and expenses associated with developing the app because we confirm that we only charge reasonable fees.",
   },
   {
     id: 4,
-    slug: "seo",
-    title: "SEO Services",
+    title: "Maintenance is Easy",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "We save all coding and programming data in a shared cloud, which facilitates our maintenance.",
   },
   {
     id: 5,
-    slug: "social-media-management",
-    title: "SMM Services",
+    title: "Optimizing App Loading Time",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Our hybrid apps load quickly because all codes, content, and photos are easily displayed in the central directory and on the app's front page.",
   },
   {
-    id: 6,
-    slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "Inspecting Campaigns",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Before sending email, we analyze every email campaign to find out whether it is relevant, error free and spam free.",
   },
 ];
 
@@ -69,119 +66,144 @@ const Consulting = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
               <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
+                Hybrid Mobile Application Development Company
               </span>
-              Consulting Services{" "}
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          Coding Expo is a foremost hybrid mobile app development company that
+          has thought- thrilling expertise in developing hybrid apps. We have a
+          crew of hybrid app developers who are competent in software
+          development, visual design, UI/UX design, and so on. Our familiarity
+          with the digital ecosystem leads us to craft the ideal combination of
+          functionality, invention, and artistic and visual fineness. We consult
+          with you to pick the optimum and robust hybrid development tools. We
+          also apply high-tech systems to make the framework of customized
+          applications that appropriately complement your business aspirations.
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
-        <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
-        </h2>
+        <h2>What Includes Hybrid App Development Services</h2>
         <ul>
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Hybrid Application Development</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We have appointed seasoned app developers to bring first-rate
+                hybrid app development services worldwide, irrespective of
+                business category and industry. Whether you have a seed stage
+                company, established business, big corporation, or enterprise,
+                our task force can customize remedies in accordance with your
+                business prerequisite.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>Hybrid Application Design</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Coding Expo is a guiding force in capitalizing on hybrid
+                application design and composing robustly responsive,
+                client-focused, and expandable hybrid apps for the varied
+                platforms, screen sizes, frameworks, browsers, or devices
+                comprising Android or iOS. We have a high- caliber workforce
+                with the brain and heart to construct such impressive apps.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>Hybrid Application Integration</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Performing as a frontrunner, Coding Expo's app developers are
+                masterful with upgraded mechanisms and techniques for the
+                precise incorporation of hybrid apps with other third- party
+                apps.
               </div>
             </p>
           </li>
           <li>
-            <h4>Optimizing Emails</h4>
+            <h4>Flutter Native Development</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Acting as a savvy Hybrid mobile apps creator, we employ Flutter
+                to build multiplatform apps with impeccable efficiency,
+                appealing interfaces, and stunning solutions.
               </div>
             </p>
           </li>
           <li>
-            <h4>Mobile App Development Consulting</h4>
+            <h4>Hybrid Apps Maintenance & Assistance</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We also harness unrivaled hybrid app maintenance and Assistance,
+                which confirms that applications maximize productivity
+                throughout the elevated rush hours..
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>HTML5 App Development</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                We employ a cluster of accomplished and adept app developers
+                grasping profound insights to present safe, expandable, and
+                demand-based HTML5 apps. We will compose these apps to
+                accomplish your expectations. We deploy hybrid app engineers who
+                are incredibly practiced and familiar with correct learning to
+                construct an app that matches your desires.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>React Native App Development</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                With rapid, strong, and up-to-the-mark efficiency, our
+                developers are well-read to capitalize on React Native's
+                competency to make vigorous, enlightening, and client-driven
+                hybrid mobile apps.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Hybrid App Migration</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                Switching from one technology to another and updating hybrid app
+                programming and architecture is right with our contemporary
+                application migration acumen. One can achieve perfect
+                productivity through the app without even being concerned about
+                migration issues because we perform hybrid app migration with
+                high caliber.
               </div>
             </p>
           </li>
@@ -192,8 +214,7 @@ const Consulting = () => {
       <section className="service-highlights">
         <h2>Determine the Potent</h2>
         <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
+          Why Join Hands with Coding Expo Hybrid Mobile App Development Company
         </p>
         <div className="services-grid">
           {services.map((service, index) => (
@@ -215,20 +236,12 @@ const Consulting = () => {
       </section>
       <section className="uiux-tools-section">
         <div className="tools-heading">
-          <h2>Tools We Use in UI/UX design</h2>
+          <h2>Explore Futuristic Hybrid Mobile App Architecture</h2>
           <p>
-            UX design applies to both physical and digital services/products. It
-            helps in creating framework design solutions for obstacles that
-            users meet while using the product or website. It focuses on
-            improving the complete user experience from the beginning to the
-            final phase. The objective of UX design is to deliver a product that
-            makes users contented because of their efficiency. While UI design
-            applies only to digital services and products. User interface design
-            distillates visual aspects that enable users to align with the
-            product. UI involves in making a blend of images, animation, colors,
-            typography etc. User Interface design (UI) aims to customize a
-            product that provides creative and visual satisfaction to users. We
-            use software for UI/UX designs:
+            Take benefits of authentic caliber and more than 10 years of
+            familiarity and adeptness in nurturing revolutionary apps in all
+            hybrid architecture. We hand over demand-based, breathtaking, and
+            long-standing hybrid apps by harnessing the following technologies.
           </p>
         </div>
 
@@ -238,46 +251,20 @@ const Consulting = () => {
           </div>
           <div className="tools-grid">
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Figma"
-              />
-              <p>Figma</p>
+              <img src={react1} alt="react" />
+              <p>React</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Photoshop"
-              />
-              <p>PhotoShop</p>
+              <img src={flutter} alt="flutter" />
+              <p>Flutter</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="Illustrator"
-              />
-              <p>Illustrator</p>
+              <img src={android} alt="android studio" />
+              <p>Android Studio</p>
             </div>
             <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
-                alt="Corel Draw"
-              />
-              <p>Corel Draw</p>
-            </div>
-            <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="Canva"
-              />
-              <p>Canva</p>
-            </div>
-            <div className="tool">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg"
-                alt="InDesign"
-              />
-              <p>InDesign</p>
+              <img src={kotlin} alt="kotlin" />
+              <p>Kotlin</p>
             </div>
           </div>
         </div>

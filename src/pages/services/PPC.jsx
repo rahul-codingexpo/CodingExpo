@@ -15,45 +15,39 @@ import {
 const services = [
   {
     id: 1,
-    slug: "web-development",
-    title: "Website Design & Development",
+    title: "Search Ads",
     icon: <FaPaintBrush />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Search ads are displayed in the search engine when a user searches for keywords or any products and gets results in the text form.",
   },
   {
     id: 2,
-    slug: "web-app-development",
-    title: "Mobile App Development",
+    title: "Shopping ads",
     icon: <FaMobileAlt />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Shopping displays are the uppermost part of the search engine, where images of products, prices, e-commerce websites, and more are given.",
   },
   {
     id: 3,
-    slug: "ui-ux",
-    title: "UI/UX Design",
+    title: "Video Ads",
     icon: <FaCogs />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "A fruitful video ad in a Google campaign can help you target the right customers. Creating eye-catching videos can grab your audience's attention.",
   },
   {
     id: 4,
-    slug: "seo",
-    title: "SEO Services",
+    title: "Display Ads",
     icon: <FaChartLine />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Display ads are generally used for branding and impressions. They are banner ads you can see on Google and their partner sites.",
   },
   {
     id: 5,
-    slug: "social-media-management",
-    title: "SMM Services",
+    title: "Video Campaigns",
     icon: <FaBullhorn />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "Video campaigns are a great way to get consumers' attention.",
   },
   {
     id: 6,
-    slug: "pay-per-click-services",
-    title: "PPC Services",
+    title: "App Campaigns",
     icon: <FaCloud />,
-    desc: "Our mobile app development team have developed plenty of mobile apps for various businesses.",
+    desc: "App campaigns are for mobile or web apps that allow users to install or download ads.",
   },
 ];
 
@@ -68,119 +62,115 @@ const Consulting = () => {
           </div>
           <div className="hero-title">
             <h1>
-              Prominent{" "}
-              <span className="blue">
-                Digital & Web Solutions Consulting Services{" "}
-              </span>
-              Consulting Services{" "}
+              Business Leads, <span className="blue">PPC Services </span>
+              Campaign Management{" "}
             </h1>
           </div>
         </div>
         <p className="hero-desc">
-          Occupied with the industry’s finest brain and research-driven approach
-          in web solutions and the digital arena, Coding Expo has curated
-          scalable and profitable services for all sorts of businesses. As an
-          accountable digital marketing company, we evaluate customers’
-          behavior, buying patterns, intended audience and essential insights.
-          Our core intention is to eventually elevate website traffic, user
-          engagement, search engine ranking, and business leads. It is a
-          diamond-grabbing opportunity to receive immense assistance and
-          growth-centric website development, mobile app development and digital
-          marketing services from us. Our exceptionally well-versed and talented
-          web and digital marketing consultants provide you with the finest plan
-          to establish your business in the web world and enhance your
-          business’s digital visibility.
+          PPC (Pay per Click) services are provided by a Search engine, which
+          allows customers to get web traffic and business leads through paid
+          campaigns. It is an instant method to get visibility and online
+          presence in search engines. PPC is generally a pain campaign
+          management focused on buying traffic and queries through paid listing,
+          ad copy, high- value business-oriented keywords, Geolocation targets,
+          etc. It requires expertise and deep knowledge of search engine paid
+          marketing. Therefore, choosing a prevalent digital marketing firm that
+          can easily accomplish a PPC campaign for your website and drive
+          optimum ROI (Return on Investment) for your business becomes
+          significant. Coding Expo is a spellbound PPC management Company and
+          all over the world.
         </p>
         <button className="discuss-btn">Let’s Discuss {">"}</button>
       </section>
       {/* Detailed Services */}
       <section className="detailed-services">
-        <h2>
-          Restructure Your Business with Our Web and Digital Consulting Services
-        </h2>
+        <h2>Our PPC Management and Strategy</h2>
         <ul>
           <li>
-            <h4>Digital Strategy Consulting</h4>
+            <h4>Business-Oriented Keyword Suggestion</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Our PPC specialist applies advanced tactics for deep keyword
+                analysis per your business's requirements. We classify that
+                keyword as one that could get you enormous web traffic and
+                queries that naturally grow your business.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Design Consulting</h4>
+            <h4>Campaign Setting and Structure</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                Our PPC gurus are adept at setting campaigns effectively based
+                on the client's business theme. A structured campaign is the
+                first ladder of success in PPC advertisement, and we understand
+                it better because of our consistent learning in a campaign
+                setting.
               </div>
             </p>
           </li>
           <li>
-            <h4>Website Development Consulting</h4>
+            <h4>Compelling PPC Ad Copy</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                PPC ad copy should be attractive and customized so that users
+                click on the website and go through the business. Our talented
+                content writers write catchy, business-oriented ads that
+                influence customers. We are the finest PPC Services in Noida
+                that focus on consumer benefits..
               </div>
             </p>
           </li>
           <li>
-            <h4>Optimizing Emails</h4>
+            <h4>Structured Bid Management</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                We are PPC experts and want your money to be invested in the
+                right place. Our team of PPC experts ensures that you place bids
+                only on keywords that can fetch web traffic and business for
+                you. We target keywords that are less competitive but highly
+                searchable by users.
               </div>
             </p>
           </li>
           <li>
-            <h4>Mobile App Development Consulting</h4>
+            <h4>Landing Page Optimization</h4>
             <p>
               <div className="p-img">
                 <img src={LiImage} alt="css-image" />
               </div>
               <div className="p-content">
-                Our digital marketing consulting company easily comprehends your
-                aspirations. We line up existing and anticipated business
-                outcomes, pushing your business to a high peak. Evaluating your
-                web marketing service requirement, creating an extreme level of
-                online marketing approach, and planning tactical organic and
-                paid marketing are our fully-fledged policies for starting any
-                project.
+                If a landing page is not optimized smartly, your PPC ad will
+                likely not yield the desired ROI. Landing page optimization can
+                improve your click-through rate, ad quality score, and,
+                eventually, ROI on ad spend.
+              </div>
+            </p>
+          </li>
+          <li>
+            <h4>Conversion Tracking Setup</h4>
+            <p>
+              <div className="p-img">
+                <img src={LiImage} alt="css-image" />
+              </div>
+              <div className="p-content">
+                We monitor leads and conversions through the paid ad campaign.
+                Our conversion tracking setup ensures that conversions and leads
+                are coming from which source. We make certain that the campaign
+                tracking setup can provide insights into campaign progress.
               </div>
             </p>
           </li>
@@ -191,8 +181,7 @@ const Consulting = () => {
       <section className="service-highlights">
         <h2>Determine the Potent</h2>
         <p className="subheading">
-          What Establishes <span className="blue">YourCompany</span> as a
-          Prominent Web & Digital Consulting Company
+          Our PPC Company in Noida provides services that include
         </p>
         <div className="services-grid">
           {services.map((service, index) => (
@@ -210,6 +199,18 @@ const Consulting = () => {
               </span>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="uiux-tools-section">
+        <div className="tools-heading">
+          <h2>Hire us for your PPC Services.</h2>
+          <p>
+            Once you hire us for PPC management services, we can assure you that
+            we will only rest once we bring the expected outcomes. We recognize
+            the psyche of every business, and after observing your business
+            theme and objective, it is our duty to run a fruitful PPC campaign
+            and fetch the anticipated ROI
+          </p>
         </div>
       </section>
     </div>

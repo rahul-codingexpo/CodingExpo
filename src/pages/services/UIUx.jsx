@@ -93,8 +93,7 @@ const UIUX = () => {
       {/* Detailed Services */}
       <section className="detailed-services">
         <h2>
-          How Navika Digital is Unique and Better from Other UI/UX Design
-          Companies
+          How Coding Expo is Unique and Better from Other UI/UX Design Companies
         </h2>
         <ul>
           <li>
