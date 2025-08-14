@@ -60,8 +60,13 @@ const Navbar = () => {
 
         <li
           className="dropdown-container"
-          onMouseEnter={() => setShowDropdown(true)}
-          onMouseLeave={() => setShowDropdown(false)}
+          onMouseEnter={() => window.innerWidth > 1024 && setShowDropdown(true)}
+          onMouseLeave={() =>
+            window.innerWidth > 1024 && setShowDropdown(false)
+          }
+          onClick={() =>
+            window.innerWidth <= 1024 && setShowDropdown(!showDropdown)
+          }
         >
           <span className="dropdown-link">Services</span>
           {showDropdown && (
