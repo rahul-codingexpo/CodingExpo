@@ -17,7 +17,9 @@ const Header = () => {
             <HiOutlineMail />
           </div>
           <div>
-            <span>info@codingexpo.org</span>
+            <a href="mailto:info@codingexpo.org">
+              <span>info@codingexpo.org</span>
+            </a>
           </div>
         </div>
         <div className="icon-text">

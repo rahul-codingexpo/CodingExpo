@@ -7,3 +7,7 @@ body {
     overflow-x: hidden;
     scrollbar-color: blue;
 }
+
+html{
+    scroll-behavior: auto !important;
+}

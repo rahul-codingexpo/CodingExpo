@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
@@ -12,17 +12,29 @@ import AndroidApp from "../pages/services/AndroidApp";
 import IOS from "../pages/services/Ios";
 import SEO from "../pages/services/SEO";
 import PPC from "../pages/services/PPC";
-import ScrollToTop from "../components/ScrollToTop";
 import SMM from "../pages/services/SMM";
 import MailMarketing from "../pages/services/MailMarketing";
 import Enquiry from "../pages/EnquiryPage";
+import Login from "../pages/login";
 import PaymentPage from "../pages/payment";
-export default function AllRoutes() {
+import AdminPanel from "../pages/admin/AdminPanel";
+import Dashboard from "../pages/admin/Dashboard";
+import Leads from "../pages/admin/leads";
+export default function AllRoutes({ isAuthenticated, setIsAuthenticated }) {
   return (
     <>
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/admin" element={<Login />} />
+        <Route path="/admin-panel" element={<AdminPanel />} />
+        <Route
+          path="/admin-panel"
+          element={<AdminPanel setIsAuthenticated={setIsAuthenticated} />}
+        >
+          <Route index element={<Navigate to="dashboard" />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="leads" element={<Leads />} />
+        </Route>
         <Route path="/about-company" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/enquiry" element={<Enquiry />} />
