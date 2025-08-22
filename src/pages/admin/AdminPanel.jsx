@@ -9,9 +9,9 @@ import "./AdminPanel.css";
 
 export default function AdminPanel({ setIsAuthenticated }) {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem("loggedInUser"));
   const [isOpen, setIsOpen] = useState(false);
 
+  const user = JSON.parse(localStorage.getItem("loggedInUser"));
   const handleLogout = () => {
     localStorage.removeItem("loggedInUser");
     setIsAuthenticated(false);
@@ -19,14 +19,12 @@ export default function AdminPanel({ setIsAuthenticated }) {
   };
 
   const menuRef = useRef(null);
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);

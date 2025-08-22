@@ -2,27 +2,43 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 import loginImage from "../assets/codingexpo.png";
-import users from "./admin/user";
 
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    // Find user from static data
-    const user = users.find(
-      (u) => u.email === email && u.password === password
-    );
+    try {
+      const res = await fetch("http://localhost:5000/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
 
-    if (user) {
-      // Save user in localStorage (so it can be shown in sidebar later)
-      localStorage.setItem("loggedInUser", JSON.stringify(user));
-      navigate("/admin-panel");
-    } else {
-      alert("Invalid Email or Password!");
+      const data = await res.json();
+
+      if (res.ok) {
+        // localStorage.setItem("loggedInUser", JSON.stringify(data));
+        localStorage.setItem("loggedInUser", JSON.stringify(data.user));
+
+        if (data.token) {
+          localStorage.setItem("authToken", data.token);
+        }
+
+        navigate("/admin-panel");
+      } else {
+        alert(data.message || "Invalid Email or Password!");
+      }
+    } catch (err) {
+      console.error("Login error:", err);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -68,11 +84,12 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-
             <div className="login-extra">
               <Link to="/forgot-password">Forgot Password?</Link>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" disabled={loading}>
+              {loading ? "Logging in..." : "Login"}
+            </button>
           </form>
         </div>
       </div>
