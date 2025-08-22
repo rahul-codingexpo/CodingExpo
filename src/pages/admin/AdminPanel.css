@@ -76,9 +76,9 @@
 
 .admin-hamburger {
     display: none;
-    top: 30px;
-    right: 24px;
     font-size: 28px;
+    top: 0;
+    right: 0;
     background: none;
     border: none;
     cursor: pointer;

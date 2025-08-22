@@ -20,6 +20,7 @@ import PaymentPage from "../pages/payment";
 import AdminPanel from "../pages/admin/AdminPanel";
 import Dashboard from "../pages/admin/Dashboard";
 import Leads from "../pages/admin/leads";
+import Role from "../pages/admin/Role";
 export default function AllRoutes({ isAuthenticated, setIsAuthenticated }) {
   return (
     <>
@@ -34,6 +35,7 @@ export default function AllRoutes({ isAuthenticated, setIsAuthenticated }) {
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="leads" element={<Leads />} />
+          <Route path="role" element={<Role />} />
         </Route>
         <Route path="/about-company" element={<AboutUs />} />
         <Route path="/contact-us" element={<ContactUs />} />

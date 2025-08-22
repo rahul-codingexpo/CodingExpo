@@ -1,9 +1,13 @@
 import { Routes, Route, Link, Navigate, useNavigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Leads from "./leads";
+import Role from "./Role";
 import { SiGoogleads } from "react-icons/si";
 import { RiDashboardFill } from "react-icons/ri";
-import { FaUserCircle } from "react-icons/fa";
+// import { FaUserCircle } from "react-icons/fa";
+import { IoLogOut } from "react-icons/io5";
+import { FaAddressBook } from "react-icons/fa";
+import { FcBusinessman } from "react-icons/fc";
 import React, { useState, useEffect, useRef } from "react";
 import "./AdminPanel.css";
 
@@ -40,7 +44,7 @@ export default function AdminPanel({ setIsAuthenticated }) {
       {/* Sidebar */}
       <div ref={menuRef} className={`sidebar ${isOpen ? "open" : ""}`}>
         <div className="user-info">
-          <FaUserCircle className="user-icon" />
+          <FcBusinessman className="user-icon" />
           <span className="username">{user?.name || "Admin"}</span>
         </div>
 
@@ -52,6 +56,10 @@ export default function AdminPanel({ setIsAuthenticated }) {
           <SiGoogleads /> Leads
         </Link>
 
+        <Link to="role" onClick={() => setIsOpen(false)}>
+          <FaAddressBook /> Role
+        </Link>
+
         <Link
           to="/admin"
           onClick={(e) => {
@@ -59,6 +67,7 @@ export default function AdminPanel({ setIsAuthenticated }) {
             handleLogout();
           }}
         >
+          <IoLogOut />
           Logout
         </Link>
       </div>
@@ -69,6 +78,7 @@ export default function AdminPanel({ setIsAuthenticated }) {
           <Route index element={<Navigate to="dashboard" />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="leads" element={<Leads />} />
+          <Route path="role" element={<Role />} />
         </Routes>
       </div>
     </div>

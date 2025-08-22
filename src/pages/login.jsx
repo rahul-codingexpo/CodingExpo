@@ -2,41 +2,68 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 import loginImage from "../assets/codingexpo.png";
-
+import API from "../BaseApi";
 const Login = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+
+  //   try {
+  //     const res = await fetch("http://localhost:5000/api/auth/login", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ email, password }),
+  //     });
+
+  //     const data = await res.json();
+
+  //     if (res.ok) {
+  //       // localStorage.setItem("loggedInUser", JSON.stringify(data));
+  //       localStorage.setItem("loggedInUser", JSON.stringify(data.user));
+
+  //       if (data.token) {
+  //         localStorage.setItem("authToken", data.token);
+  //       }
+
+  //       navigate("/admin-panel");
+  //     } else {
+  //       alert(data.message || "Invalid Email or Password!");
+  //     }
+  //   } catch (err) {
+  //     console.error("Login error:", err);
+  //     alert("Something went wrong. Please try again.");
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
+      const res = await API.post("/auth/login", { email, password });
+      const data = res.data;
+      localStorage.setItem("loggedInUser", JSON.stringify(data.user));
 
-      const data = await res.json();
-
-      if (res.ok) {
-        // localStorage.setItem("loggedInUser", JSON.stringify(data));
-        localStorage.setItem("loggedInUser", JSON.stringify(data.user));
-
-        if (data.token) {
-          localStorage.setItem("authToken", data.token);
-        }
-
-        navigate("/admin-panel");
-      } else {
-        alert(data.message || "Invalid Email or Password!");
+      if (data.token) {
+        localStorage.setItem("authToken", data.token);
       }
+
+      navigate("/admin-panel");
     } catch (err) {
       console.error("Login error:", err);
-      alert("Something went wrong. Please try again.");
+
+      if (err.response && err.response.data.message) {
+        alert(err.response.data.message);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
     } finally {
       setLoading(false);
     }

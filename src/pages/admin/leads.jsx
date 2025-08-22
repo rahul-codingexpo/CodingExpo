@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./leads.css";
-import axios from "axios";
-
+import API from "../../BaseApi";
 const Leads = () => {
   const [leadsData, setLeadsData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -9,7 +8,7 @@ const Leads = () => {
   useEffect(() => {
     const fetchLeads = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/leads");
+        const res = await API.get("/leads");
         setLeadsData(res.data);
         setLoading(false);
       } catch (error) {
@@ -35,8 +34,8 @@ const Leads = () => {
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Message</th>
                 <th>Date</th>
+                <th>Message</th>
               </tr>
             </thead>
             <tbody>
@@ -46,8 +45,8 @@ const Leads = () => {
                     <td>{lead.name}</td>
                     <td className="blue-email">{lead.email}</td>
                     <td>{lead.contact}</td>
-                    <td>{lead.message}</td>
                     <td>{new Date(lead.createdAt).toLocaleString()}</td>
+                    <td>{lead.message}</td>
                   </tr>
                 ))
               ) : (

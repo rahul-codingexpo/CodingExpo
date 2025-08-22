@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
 import contactImg from "../assets/contact.jpg";
+import API from "../BaseApi";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -30,15 +31,15 @@ function ContactUs() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/leads", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const res = await API.post("/leads", formData);
+      // const res = await fetch("http://localhost:5000/api/leads", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/json" },
+      //   body: JSON.stringify(formData),
+      // });
+      // const data = await res.json();
 
-      const data = await res.json();
-
-      if (res.ok) {
+      if (res.status === 201) {
         alert("Enquiry sent successfully! We will contact you soon...");
         setFormData({
           name: "",
@@ -47,7 +48,7 @@ function ContactUs() {
           message: "",
         });
       } else {
-        alert(data.message || "Something went wrong");
+        alert("Something went wrong");
       }
     } catch (err) {
       console.error("Error submitting enquiry:", err);
